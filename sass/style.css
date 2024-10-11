@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+
 body{
     font-family: "roboto",cursive;
     margin:0px;
     
 }
+
 h2{
     font-size: 40px;
+   
 }
-header{
+header .logo{
     font-family: "shrikhand",cursive;
     text-align: center;
+    padding-top: 18px;
+    
 }
+
 .ville{
     display:flex;
     align-items: center;
@@ -22,10 +28,8 @@ header{
 }
 .hero{
     text-align: center;
-    font-size: 18px;
-    
-    
-    
+     margin: 20px 15% 0 15%;
+   
 }
 button{
     border-radius: 25px;
@@ -39,17 +43,15 @@ button{
 }
 
 .fonctionnement {
-    display:block;
-   margin-left: 100px;
+    margin-left: 100px;
   margin-bottom: 50px;
   margin-right: 180px;
   margin-top: 50px;
 }
-.choix {
-    
-    width:20%;
+.choix{
+    display: flex;
+    flex-flow:row wrap;
     border-radius: 20px;
-    margin: 10px;
     padding: 1rem;
     border: 1px solid;
     padding: 1rem;
@@ -61,4 +63,6 @@ button{
     text-align: start;
     color: #000;
     font-family: "Roboto", sans-serif;
+    margin-bottom: 2rem;
+   
 }
