@@ -1,0 +1,85 @@
+.restaurants {
+    padding-bottom: 4rem;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .restaurants .card {
+    cursor: pointer;
+    position: relative;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px darkgray;
+  }
+  .restaurants .card img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .restaurants .card .description {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurants .card .description .texte {
+    width: 85%;
+  }
+  .restaurants .card .description .texte h3, .restaurants .card .description .texte p {
+    margin: 0;
+    padding: 0.3rem 0 0 1rem;
+  }
+  .restaurants .card .description .texte-star {
+    display: flex;
+    width: 15%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .restaurants .card .description .texte-star .fa-solid.fa-heart {
+    display: none;
+  }
+  .restaurants .card .description .texte-star:hover {
+    cursor: pointer;
+    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .restaurants .card .description .texte-star:hover .fa-regular.fa-heart {
+    display: none;
+  }
+  .restaurants .card .description .texte-star:hover .fa-solid.fa-heart {
+    display: inline;
+  }
+  .restaurants .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .restaurants .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px #9356dc;
+  }
+  .restaurants span {
+    position: absolute;
+    
+    right: 10px;
+     top: 20px;
+    font-weight: bold;
+    background-color: #99E2D0;
+    color: #2FAF94;
+    padding: 0.5rem;
+    width: 65px;
+  }
+  .restaurants h3 {
+   padding-left: 3rem;
+    width: 100%;
+  }
+  
