@@ -1,27 +1,27 @@
 .restaurants {
-    padding-bottom: 4rem;
-    background-color: #F6F6F6;
-    display: flex;
+   
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    width: 100%;
+    
   }
   .restaurants .card {
     cursor: pointer;
     position: relative;
+    width: 100%;
+    gap: 35px;
     height: 270px;
     display: flex;
     flex-direction: column;
     flex-basis: 45%;
-    background-color: white;
+    
     border-radius: 1rem;
     box-shadow: 0 3px 8px darkgray;
   }
   .restaurants .card img {
     width: 100%;
     object-fit: cover;
-    min-height: 200px;
-    max-height: 200px;
+     max-height: 200px;
     border-radius: 1rem 1rem 0 0;
   }
   .restaurants .card .description {
@@ -46,13 +46,7 @@
   .restaurants .card .description .texte-star .fa-solid.fa-heart {
     display: none;
   }
-  .restaurants .card .description .texte-star:hover {
-    cursor: pointer;
-    background: linear-gradient(#9356dc 20%, #ff79da 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  
   .restaurants .card .description .texte-star:hover .fa-regular.fa-heart {
     display: none;
   }

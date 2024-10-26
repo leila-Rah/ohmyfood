@@ -1,11 +1,36 @@
 body{
     font-family:"roboto",serif;
 }
+.choix{
+    background-color: #FAFAFA;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
 .footer{
     background-color: #353535;
     color: white;
+    padding-left: 1rem;
 }
 .footer a {
     text-decoration: none;
     color: white;
 }
+.footer h4{
+    margin-top: 2rem;
+}
+h4{
+    padding-top: 2rem;;
+}
+.restaurants{
+    background-color: #F6F6F6;
+}
+.restaurants .card{
+    background-color: white;
+}
+.restaurants .card .description .texte-star:hover {
+    cursor: pointer;
+    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

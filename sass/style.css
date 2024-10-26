@@ -9,22 +9,20 @@
   }
 }
 .restaurants {
-  padding-bottom: 4rem;
-  background-color: #F6F6F6;
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  width: 100%;
 }
 
 .restaurants .card {
   cursor: pointer;
   position: relative;
+  width: 100%;
+  gap: 35px;
   height: 270px;
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
-  background-color: white;
   border-radius: 1rem;
   box-shadow: 0 3px 8px darkgray;
 }
@@ -33,7 +31,6 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 200px;
   max-height: 200px;
   border-radius: 1rem 1rem 0 0;
 }
@@ -63,14 +60,6 @@
 
 .restaurants .card .description .texte-star .fa-solid.fa-heart {
   display: none;
-}
-
-.restaurants .card .description .texte-star:hover {
-  cursor: pointer;
-  background: linear-gradient(#9356dc 20%, #ff79da 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .restaurants .card .description .texte-star:hover .fa-regular.fa-heart {
@@ -111,9 +100,16 @@ body {
   font-family: "roboto", serif;
 }
 
+.choix {
+  background-color: #FAFAFA;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
 .footer {
   background-color: #353535;
   color: white;
+  padding-left: 1rem;
 }
 
 .footer a {
@@ -121,12 +117,38 @@ body {
   color: white;
 }
 
+.footer h4 {
+  margin-top: 2rem;
+}
+
+h4 {
+  padding-top: 2rem;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+.restaurants .card {
+  background-color: white;
+}
+
+.restaurants .card .description .texte-star:hover {
+  cursor: pointer;
+  background: linear-gradient(#9356dc 20%, #ff79da 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   margin: 0px;
 }
 
-h2 {
-  font-size: 40px;
+h3 {
+  font-size: 24px;
+  padding-left: 20px;
+  font-family: roboto;
 }
 
 header {
@@ -159,10 +181,14 @@ button {
 }
 
 .fonctionnement {
-  margin-left: 100px;
-  margin-bottom: 50px;
-  margin-right: 180px;
-  margin-top: 50px;
+  margin-left: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.choix span {
+  padding: 0 1rem;
 }
 
 .choix {
