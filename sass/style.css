@@ -124,7 +124,9 @@ body {
 h4 {
   padding-top: 2rem;
 }
-
+.titre-fonctionnement h2{
+  padding-left: 2rem;
+}
 .restaurants {
   background-color: #F6F6F6;
 }
