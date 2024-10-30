@@ -1,59 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-@import'utils/variables';
-@import'utils/mixins';
-@import'layouts/footer';
-@import'pages/restaurants';
-@import'base/typography';
-
-body{
- margin:0px;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@media only sreen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem 0 3rem 2rem;
+  }
 }
-h3{
+body {
+  font-family: "roboto", serif;
+}
+
+.choix {
+  background-color: #FAFAFA;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-left: 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer h4 {
+  margin-top: 2rem;
+}
+
+h4 {
+  padding-top: 2rem;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+
+.restaurants .card {
+  background-color: white;
+}
+
+.restaurants .card .description .texte-star:hover {
+  cursor: pointer;
+  background: linear-gradient(#9356dc 20%, #ff79da 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 660px) {
+  body {
+    margin: 0px;
+  }
+  h3 {
     font-size: 24px;
     padding-left: 20px;
     font-family: roboto;
-}
-h2{
+  }
+  h2 {
     padding-left: 2rem;
-}
-header {
- text-align: center;
-}
-.ville{
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    gap:17px ;
-    background-color: rgba(234, 234, 234, 1);
-    padding:3px;
-}
-.hero{
+  }
+  header {
     text-align: center;
-     margin: 20px 15% 0 15%;
-   
-}
-button{
+  }
+  .ville {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    background-color: rgb(234, 234, 234);
+    padding: 3px;
+  }
+  .hero {
+    text-align: center;
+    margin: 20px 15% 0 15%;
+  }
+  button {
     border-radius: 25px;
     width: 218px;
     height: 50px;
-    background:linear-gradient(#ff79da, #9356dc);
-    box-shadow: 0px 5px 10px 0px #000 ;
-    color:white;
+    background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0px 5px 10px 0px #000;
+    color: white;
     padding: 1rem;
-    border:none;
-    font-weight:bold;
-}
-.titre-fonctionnement h2{
+    border: none;
+    font-weight: bold;
+  }
+  .titre-fonctionnement h2 {
     padding-left: 2rem;
-}
-.fonctionnement {
-  margin-left: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.choix span{
+  }
+  .fonctionnement {
+    margin-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .choix span {
     left: -2rem;
     padding: 0 0.5rem;
     position: relative;
@@ -62,10 +109,10 @@ button{
     font-weight: bold;
     background-color: #9356dc;
     color: white;
-}
-.choix{
+  }
+  .choix {
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     border-radius: 20px;
     padding: 1rem;
     border: none;
@@ -77,21 +124,20 @@ button{
     color: #000;
     font-family: "Roboto", sans-serif;
     margin-bottom: 2rem;
-    width:255px;
-   
-}
-.choix i{
+    width: 255px;
+  }
+  .choix i {
     padding-right: 1rem;
-}
-.restaurants {
-    display:flex;
+  }
+  .restaurants {
+    display: flex;
     padding-bottom: 4rem;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap:2rem;
-}
-.restaurants .card {
+    gap: 2rem;
+  }
+  .restaurants .card {
     cursor: pointer;
     position: relative;
     height: 270px;
@@ -102,13 +148,14 @@ button{
     border-radius: 1rem;
     box-shadow: 0 3px 8px darkgray;
   }
-.restaurants .card img {
+  .restaurants .card img {
     width: 100%;
-    object-fit: cover;
-     max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 200px;
     border-radius: 1rem 1rem 0 0;
-}
-.restaurants .card .description {
+  }
+  .restaurants .card .description {
     display: flex;
     justify-content: space-around;
   }
@@ -167,11 +214,10 @@ button{
     padding-top: 2rem;
     width: 100%;
   }
-  @media (max-width: 660px) {
-    .restaurants .card {
-      display: flex;
-      flex-basis: 100%;
-      min-width: 210px;
-      margin-top: 1rem;
-    }
+  .restaurants .card {
+    display: flex;
+    flex-basis: 100%;
+    min-width: 210px;
+    margin-top: 1rem;
   }
+}/*# sourceMappingURL=style.css.map */
