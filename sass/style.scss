@@ -85,13 +85,12 @@ button{
 }
 .restaurants {
     display:flex;
-    padding-bottom: 4rem;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     gap:2rem;
 }
-.restaurants .card {
+ .card {
     cursor: pointer;
     position: relative;
     height: 270px;
@@ -160,27 +159,24 @@ button{
     background-color: #99E2D0;
     color: #2FAF94;
     padding: 0.5rem;
-    width: 65px;
+    
   }
-  .restaurants h2 {
-    margin: 4rem 0 0 2rem;
-    padding-top: 2rem;
-    width: 100%;
-  }
+  
   @media (max-width: 660px) {
-    .restaurants .card {
+    .restaurants .card .texte .texte1{
       display: flex;
       flex-basis: 100%;
       min-width: 210px;
       margin-top: 1rem;
     }
+    
   }
-  .card-container{
-    display: grid;
-    width: 100%;
+ 
 
-  }
-  .restaurants h3{
-    display: flex;
-    justify-content: flex-start;
-  }
+
+
+
+
+
+  
+  

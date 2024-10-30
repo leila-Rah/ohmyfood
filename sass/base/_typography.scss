@@ -23,16 +23,77 @@ h4{
     padding-top: 2rem;
 }
 
-.restaurants{
-    background-color: #F6F6F6;
-}
-.restaurants .card{
+
+  .restaurants .card {
+    cursor: pointer;
+    position: relative;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
     background-color: white;
-}
+    border-radius: 1rem;
+    box-shadow: 0 3px 8px darkgray;
+  }
+  .restaurants .card img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .restaurants .card .description {
+    display: flex;
+    justify-content: space-around;
+  }
+  .restaurants .card .description .layout {
+    width: 85%;
+  }
+  .restaurants .card .description .layout h3, .restaurants .card .description .layout p {
+    margin: 0;
+    padding: 0.3rem 0 0 1rem;
+  }
+  .restaurants .card .description .layout-star {
+    display: flex;
+    width: 15%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .restaurants .card .description .layout-star .fa-solid.fa-heart {
+    display: none;
+  }
 .restaurants .card .description .texte-star:hover {
     cursor: pointer;
     background: linear-gradient(#9356dc 20%, #ff79da 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  .restaurants .card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .restaurants span {
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 20px;
+    font-weight: bold;
+    background-color: #99E2D0;
+    color: #2FAF94;
+    padding: 0.5rem;
+    width: 65px;
+  }
+  .restaurants h2 {
+     width: 100%;
+  }
+  @media (max-width: 660px) {
+    .restaurants .card {
+      display: flex;
+      flex-basis: 100%;
+      min-width: 210px;
+      margin-top: 1rem;
+    }
   }
