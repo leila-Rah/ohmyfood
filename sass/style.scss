@@ -85,26 +85,17 @@ button{
 }
 .restaurants {
     display:flex;
+    background-color: #F6F6F6;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    gap:2rem;
+    
 }
- .card {
-    cursor: pointer;
-    position: relative;
-    height: 270px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 45%;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 3px 8px darkgray;
-  }
+ 
 .restaurants .card img {
     width: 100%;
     object-fit: cover;
-     max-height: 200px;
+     max-height: 150px;
     border-radius: 1rem 1rem 0 0;
 }
 .restaurants .card .description {
@@ -161,16 +152,11 @@ button{
     padding: 0.5rem;
     
   }
-  
-  @media (max-width: 660px) {
-    .restaurants .card .texte .texte1{
-      display: flex;
-      flex-basis: 100%;
-      min-width: 210px;
-      margin-top: 1rem;
-    }
-    
+  .violet-icon{
+    color: #9356dc;
   }
+  
+  
  
 
 
