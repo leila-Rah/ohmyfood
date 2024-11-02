@@ -189,7 +189,7 @@ main img {
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
   margin: 0;
-  overflow: hidden; /* OVERHIDDEN */
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -257,13 +257,8 @@ main img {
 }
 
 .description {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; /* OVERHIDDEN */
   white-space: nowrap;
   text-overflow: ellipsis;
-  justify-content: space-between;
-  width: 80%;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
 

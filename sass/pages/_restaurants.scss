@@ -241,14 +241,9 @@ main img {
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;               /* OVERHIDDEN */
     white-space: nowrap;
     text-overflow: ellipsis;
-    justify-content: space-between;
-    width: 80%;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+     padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
 .prix {
     display: flex;
