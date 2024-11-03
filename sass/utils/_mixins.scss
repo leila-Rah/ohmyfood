@@ -8,3 +8,15 @@
     align-items: center;
     justify-content: center;
 }
+@mixin flex-fl{
+    display: flex;
+    flex-flow:row wrap;
+}
+@mixin flex-j{
+    display:flex;
+    justify-content: center;
+}
+@mixin flex-di{
+    display:flex;
+    flex-direction: column;
+} 

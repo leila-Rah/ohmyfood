@@ -73,16 +73,6 @@ header > div {
 .titre h1 {
     font-family: "Shrikhand", cursive;
 }
-
-
-
-/*
-*       MAIN
-*/
-
-fieldset {
-    border: 0
-}
 main img {
     height: 400px;
     object-fit: cover;
@@ -102,17 +92,12 @@ main img {
     padding-left: 2rem;;
     background-color: var(--ultralightgray);
 }
-.titre-menu h1 {
-    font-family: 'Shrikhand', cursive;
-}
 .titre-menu i {
     display: flex;
     font-size: 2rem;
     padding-right: 3rem;
 }
-   
-
-.layout-star {
+ .layout-star {
     display: flex;
     width: 15%;
     height: 50px;
@@ -137,9 +122,8 @@ main img {
 }
 
 
-/*
-*       PANIER
-*/
+/*   PANIER  */
+
 .panier {
     position: absolute;
     left: 85%;
@@ -158,13 +142,10 @@ main img {
 
 
 
-/*
-*       MENU
-*/
+/*   MENU  */
+
 .menus {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   @include mixin flex-col
 }
 
 .entrees, .plats, .desserts {
@@ -182,16 +163,13 @@ main img {
     margin: 0;
     margin-bottom: 0.3rem;
 }
-
-
     /* Barre verte sous titre de menu */
+
 .entrees > p, .plats > p, .desserts > p {
     width: 47px;
     color: var(--ultralightgray);
     border-top: 3px solid var(--lightgreen);
 }
-
-
 .article-menu {
     display: flex;
     border: 1px solid transparent;
@@ -217,7 +195,6 @@ main img {
     position: absolute;
     visibility: hidden;
 }
-
 .article-menu label { 
     position: absolute;
     width: 470px; 
@@ -253,14 +230,12 @@ main img {
     border-radius: 0 1rem 1rem 0;
 }
 .select-choix {
-    display: flex;
+   @include mixin flex-just
     background-color: var(--lightgreen);
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 1rem 1rem 0;
+     border-radius: 0 1rem 1rem 0;
     width: 4rem;
     margin-right: -4rem;
 }
@@ -269,9 +244,8 @@ main img {
 }
 
 .btn-explore {
-    display: flex;
+  @include mixin flex-j  
     flex-wrap: wrap;
-    justify-content: center;
 }
 .btn-explore label {
     padding: 1.3rem;
@@ -297,30 +271,20 @@ main img {
 }
 
 
-/*
-*       FOOTER
-*/
+/*   FOOTER  */
+
 footer {
     background-color: var(--grayblack);
     color: white;
     padding: 1rem 0 3rem 2rem;
 }
-footer h1 {
-    font-family: 'Shrikhand', cursive;
-    font-weight: normal;
-}
+
 footer a {
     text-decoration: none;
     color: white;
 }
+/*  MEDIA QUERIES  */
 
-
-
-
-
-/*
-*       MEDIA QUERIES
-*/
 @media (max-width : 768px) {
     .subtitle {
         font-size: 1.2rem;
@@ -345,9 +309,8 @@ footer a {
     }
 }
 
-/*
-*       KeyFrames
-*/
+/*   KeyFrames  */
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
