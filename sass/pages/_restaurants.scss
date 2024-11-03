@@ -236,7 +236,7 @@ main img {
     font-weight: bold;
     font-size: 1.3rem;
      border-radius: 0 1rem 1rem 0;
-    width: 4rem;
+    width : 4rem;
     margin-right: -4rem;
 }
 .description:hover, .prix:hover {
@@ -246,7 +246,8 @@ main img {
 .btn-explore {
   @include mixin flex-j  
     flex-wrap: wrap;
-}
+ }
+
 .btn-explore label {
     padding: 1.3rem;
     color: white;
