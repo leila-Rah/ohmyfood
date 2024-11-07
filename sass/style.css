@@ -23,21 +23,14 @@
   --grayblack: #353535;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .gray {
   color: var(--dimgray);
 }
 
-/*
-*       HEADER
-*/
+/*  HEADER  */
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
   max-width: 1024px;
 }
 
@@ -46,16 +39,12 @@ header {
 }
 
 header h1 {
-  font-family: "Shrikhand", cursive;
   font-size: 2.3rem;
   margin: 0;
   padding: 1rem 0;
   text-align: center;
 }
 
-/*
-*       HEADER
-*/
 header > div {
   display: flex;
 }
@@ -79,21 +68,6 @@ header > div {
   justify-content: center;
 }
 
-.titre h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-/*
-*       MAIN
-*/
-main {
-  background-color: var(--ultralightgray);
-}
-
-fieldset {
-  border: 0;
-}
-
 main img {
   height: 400px;
   -o-object-fit: cover;
@@ -113,11 +87,6 @@ main img {
   align-items: center;
   flex-basis: 95%;
   padding-left: 2rem;
-  background-color: var(--ultralightgray);
-}
-
-.titre-menu h1 {
-  font-family: "Shrikhand", cursive;
 }
 
 .titre-menu i {
@@ -154,9 +123,7 @@ main img {
   display: inline;
 }
 
-/*
-*       PANIER
-*/
+/*   PANIER  */
 .panier {
   position: absolute;
   left: 85%;
@@ -173,9 +140,7 @@ main img {
   color: var(--green);
 }
 
-/*
-*       MENU
-*/
+/*   MENU  */
 .menus {
   display: flex;
   flex-direction: column;
@@ -274,12 +239,12 @@ main img {
 
 .select-choix {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--lightgreen);
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
-  align-items: center;
-  justify-content: center;
   border-radius: 0 1rem 1rem 0;
   width: 4rem;
   margin-right: -4rem;
@@ -291,8 +256,8 @@ main img {
 
 .btn-explore {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn-explore label {
@@ -320,18 +285,11 @@ main img {
   flex-basis: 100%;
 }
 
-/*
-*       FOOTER
-*/
+/*   FOOTER  */
 footer {
   background-color: var(--grayblack);
   color: white;
   padding: 1rem 0 3rem 2rem;
-}
-
-footer h1 {
-  font-family: "Shrikhand", cursive;
-  font-weight: normal;
 }
 
 footer a {
@@ -339,9 +297,7 @@ footer a {
   color: white;
 }
 
-/*
-*       MEDIA QUERIES
-*/
+/*  MEDIA QUERIES  */
 @media (max-width: 768px) {
   .subtitle {
     font-size: 1.2rem;
@@ -363,9 +319,7 @@ footer a {
     margin-left: 1rem;
   }
 }
-/*
-*       KeyFrames
-*/
+/*   KeyFrames  */
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -388,6 +342,18 @@ footer a {
 }
 body {
   font-family: "roboto", serif;
+}
+
+header h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.titre h1 {
+  font-family: "Shrikhand", cursive;
 }
 
 .choix {
@@ -418,6 +384,19 @@ h3 {
   font-family: roboto;
 }
 
+.explore-restaurants {
+  font-weight: bold;
+}
+
+.titre-menu h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+footer h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: normal;
+}
+
 body {
   margin: 0px;
 }
@@ -425,7 +404,6 @@ body {
 h3 {
   font-size: 24px;
   padding-left: 20px;
-  font-family: roboto;
 }
 
 h2 {
@@ -445,12 +423,12 @@ header {
   padding: 3px;
 }
 
-.hero {
+.btn-explore {
   text-align: center;
   margin: 20px 15% 0 15%;
 }
 
-button {
+.explore-restaurants {
   border-radius: 25px;
   width: 218px;
   height: 50px;
@@ -459,7 +437,6 @@ button {
   color: white;
   padding: 1rem;
   border: none;
-  font-weight: bold;
 }
 
 .titre-fonctionnement h2 {
@@ -471,6 +448,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap: 2rem;
 }
 
 .choix span {
@@ -495,8 +473,6 @@ button {
   font-size: 1rem;
   font-weight: 500;
   text-align: start;
-  color: #000;
-  font-family: "Roboto", sans-serif;
   margin-bottom: 2rem;
   width: 255px;
 }
@@ -507,11 +483,11 @@ button {
 
 .restaurants {
   display: flex;
-  background-color: #F6F6F6;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 3rem;
+  justify-content: space-evenly;
 }
 
 .restaurants .card {
@@ -524,6 +500,7 @@ button {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 3px 8px darkgray;
+  margin-top: 1rem;
 }
 
 .restaurants .card img {
@@ -550,10 +527,10 @@ button {
 
 .restaurants .card .description .layout-star {
   display: flex;
-  width: 15%;
-  height: 50px;
   align-items: center;
   justify-content: center;
+  width: 15%;
+  height: 50px;
   font-size: 1.5rem;
 }
 
