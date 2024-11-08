@@ -274,7 +274,7 @@ main img {
 }
 
 .btn-explore p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding: 0 1rem;
   flex-basis: 100%;
@@ -342,7 +342,7 @@ header h1 {
 
 .btn-explore h1 {
   font-family: roboto;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .titre h1 {
@@ -390,8 +390,9 @@ body {
   margin: 0px;
 }
 
-h3 {
+.ville h3 {
   font-size: 18px;
+  padding-left: 1rem;
 }
 
 h2 {
