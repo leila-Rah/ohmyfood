@@ -53,7 +53,7 @@ header > div {
   display: flex;
   flex-basis: 2rem;
   align-items: center;
-  margin-left: 1rem;
+  justify-content: center;
 }
 
 .logo i {
@@ -154,15 +154,12 @@ main img {
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
   margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .entrees h3, .plats h3, .desserts h3 {
-  text-transform: uppercase;
   margin: 0;
   margin-bottom: 0.3rem;
+  border-bottom: 3px solid rgb(153, 226, 208);
 }
 
 /* Barre verte sous titre de menu */
@@ -174,7 +171,7 @@ main img {
 
 .article-menu {
   display: flex;
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: white;
   width: 470px;
   border-radius: 1rem;
@@ -229,10 +226,10 @@ main img {
 
 .prix {
   display: flex;
-  width: 4rem;
+  width: 6rem;
   font-weight: bold;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: end;
   padding: 0 0.5rem 0.5rem 0;
   border-radius: 0 1rem 1rem 0;
 }
@@ -247,7 +244,6 @@ main img {
   font-size: 1.3rem;
   border-radius: 0 1rem 1rem 0;
   width: 4rem;
-  margin-right: -4rem;
 }
 
 .description:hover, .prix:hover {
@@ -278,9 +274,8 @@ main img {
 }
 
 .btn-explore p {
-  font-size: 1.8rem;
+  font-size: 18px;
   margin: 0;
-  margin-top: 1.5rem;
   padding: 0 1rem;
   flex-basis: 100%;
 }
@@ -289,7 +284,7 @@ main img {
 footer {
   background-color: var(--grayblack);
   color: white;
-  padding: 1rem 0 3rem 2rem;
+  padding: 0 0 1rem;
 }
 
 footer a {
@@ -306,17 +301,10 @@ footer a {
 @media (max-width: 530px) {
   .article-menu, .article-menu input, .article-menu label {
     width: 350px;
-    margin: auto;
     margin-bottom: 1rem;
   }
   .entrees, .plats, .desserts {
     padding: 0;
-  }
-  .entrees h3, .plats h3, .desserts h3 {
-    margin-left: 1rem;
-  }
-  .entrees > p, .plats > p, .desserts > p {
-    margin-left: 1rem;
   }
 }
 /*   KeyFrames  */
@@ -352,6 +340,11 @@ header h1 {
   font-weight: bold;
 }
 
+.btn-explore h1 {
+  font-family: roboto;
+  font-size: 24px;
+}
+
 .titre h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -376,10 +369,6 @@ header h1 {
   margin-top: 2rem;
 }
 
-h4 {
-  padding-top: 2rem;
-}
-
 h3 {
   font-family: roboto;
 }
@@ -402,8 +391,7 @@ body {
 }
 
 h3 {
-  font-size: 24px;
-  padding-left: 20px;
+  font-size: 18px;
 }
 
 h2 {
@@ -418,14 +406,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 17px;
   background-color: rgb(234, 234, 234);
-  padding: 3px;
 }
 
 .btn-explore {
   text-align: center;
-  margin: 20px 15% 0 15%;
+}
+
+.fa-store:before {
+  color: #9356dc;
 }
 
 .explore-restaurants {
@@ -487,13 +476,11 @@ header {
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 3rem;
-  justify-content: space-evenly;
 }
 
 .restaurants .card {
   cursor: pointer;
   position: relative;
-  height: 270px;
   display: flex;
   flex-direction: column;
   flex-basis: 45%;
@@ -522,7 +509,6 @@ header {
 
 .restaurants .card .description .layout h3, .restaurants .card .description .layout p {
   margin: 0;
-  padding: 0.3rem 0 0 1rem;
 }
 
 .restaurants .card .description .layout-star {
