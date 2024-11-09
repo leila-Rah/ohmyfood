@@ -69,7 +69,7 @@ header > div {
 }
 
 main img {
-  height: 400px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 70%;
@@ -158,8 +158,11 @@ main img {
 
 .entrees h3, .plats h3, .desserts h3 {
   margin: 0;
-  margin-bottom: 0.3rem;
-  border-bottom: 3px solid rgb(153, 226, 208);
+  margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(158, 226, 208);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
 }
 
 /* Barre verte sous titre de menu */
@@ -280,6 +283,17 @@ main img {
   flex-basis: 100%;
 }
 
+bodymain .menus .articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+body section {
+  border: 0;
+}
+
 /*   FOOTER  */
 footer {
   background-color: var(--grayblack);
@@ -297,6 +311,10 @@ footer a {
   .subtitle {
     font-size: 1.2rem;
   }
+  body main .menus .articles .entrees p .plats .desserts {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 530px) {
   .article-menu, .article-menu input, .article-menu label {
@@ -305,6 +323,9 @@ footer a {
   }
   .entrees, .plats, .desserts {
     padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 /*   KeyFrames  */
