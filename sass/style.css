@@ -439,6 +439,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .choix span {
