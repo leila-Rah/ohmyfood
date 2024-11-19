@@ -8,6 +8,9 @@
 
 body{
  margin:0px;
+ display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .ville h3{
     font-size: 18px;
@@ -22,7 +25,7 @@ header {
 .ville{
     @include flex-just;
     background-color: rgba(234, 234, 234, 1);
-   
+   gap: 10px;
 }
 .btn-explore{
     text-align: center;
@@ -41,13 +44,47 @@ header {
     border:none;
     
 }
+.main-container{
+  max-width: 1440px;
+  width: 100%;
+
+}
+.btn-explore label {
+  padding: 1rem;
+  color: white;
+  width:232px;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(var(--secondary), var(--primary));
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 3px 10px var(--darkgray);
+}
+.btn-explore label:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px var(--secondary);
+}
+.btn-explore p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0 1rem;
+  flex-basis: 100%;
+}
+.btn-explore {
+  @include flex-j; 
+    flex-wrap: wrap;
+ }
 .titre-fonctionnement h2{
     padding-left: 2rem;
 }
 .fonctionnement {
-  margin-left: 35px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ flex-wrap: wrap;
+  margin-top: 20px;
+  padding:1rem;
   width: 100%;
   gap:2rem;
   margin-bottom:3rem;
@@ -63,7 +100,7 @@ header {
     color: white;
 }
 .choix{
-  @include flex-fl;
+  display: flex;
     border-radius: 20px;
     padding: 1rem;
     border: none;
@@ -73,7 +110,7 @@ header {
     font-weight: 500;
     text-align: start;
     margin-bottom: 2rem;
-    width:255px;
+    
    
 }
 .choix i{

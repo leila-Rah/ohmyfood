@@ -31,7 +31,6 @@
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1024px;
 }
 
 header {
@@ -181,6 +180,7 @@ main img {
   overflow: hidden;
   margin-bottom: 1rem;
   animation: effet-menu 1s ease-in;
+  box-shadow: 0 2px 5px darkgray;
 }
 
 .article-menu:hover .select-choix {
@@ -229,58 +229,21 @@ main img {
 
 .prix {
   display: flex;
-  width: 6rem;
+  width: 19rem;
   font-weight: bold;
   align-items: flex-end;
   justify-content: end;
   padding: 0 0.5rem 0.5rem 0;
-  border-radius: 0 1rem 1rem 0;
 }
 
 .select-choix {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--lightgreen);
-  color: white;
-  font-weight: bold;
-  font-size: 1.3rem;
-  border-radius: 0 1rem 1rem 0;
-  width: 4rem;
 }
 
 .description:hover, .prix:hover {
   cursor: pointer;
-}
-
-.btn-explore {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn-explore label {
-  padding: 1.3rem;
-  color: white;
-  border-radius: 2rem;
-  font-size: 1.3rem;
-  background: linear-gradient(var(--secondary), var(--primary));
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  box-shadow: 0 3px 10px var(--darkgray);
-}
-
-.btn-explore label:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 0 3px 10px var(--secondary);
-}
-
-.btn-explore p {
-  font-size: 16px;
-  margin: 0;
-  padding: 0 1rem;
-  flex-basis: 100%;
 }
 
 bodymain .menus .articles {
@@ -319,7 +282,7 @@ footer a {
 }
 @media (max-width: 530px) {
   .article-menu, .article-menu input, .article-menu label {
-    width: 350px;
+    width: 360px;
     margin-bottom: 1rem;
   }
   .entrees, .plats, .desserts {
@@ -327,6 +290,7 @@ footer a {
     width: 100%;
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-top: 2rem;
   }
 }
 /*   KeyFrames  */
@@ -410,6 +374,9 @@ footer h1 {
 
 body {
   margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ville h3 {
@@ -430,6 +397,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgb(234, 234, 234);
+  gap: 10px;
 }
 
 .btn-explore {
@@ -451,14 +419,53 @@ header {
   border: none;
 }
 
+.main-container {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.btn-explore label {
+  padding: 1rem;
+  color: white;
+  width: 232px;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(var(--secondary), var(--primary));
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 3px 10px var(--darkgray);
+}
+
+.btn-explore label:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px var(--secondary);
+}
+
+.btn-explore p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0 1rem;
+  flex-basis: 100%;
+}
+
+.btn-explore {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .titre-fonctionnement h2 {
   padding-left: 2rem;
 }
 
 .fonctionnement {
-  margin-left: 35px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 1rem;
   width: 100%;
   gap: 2rem;
   margin-bottom: 3rem;
@@ -477,7 +484,6 @@ header {
 
 .choix {
   display: flex;
-  flex-flow: row wrap;
   border-radius: 20px;
   padding: 1rem;
   border: none;
@@ -487,7 +493,6 @@ header {
   font-weight: 500;
   text-align: start;
   margin-bottom: 2rem;
-  width: 255px;
 }
 
 .choix i {
