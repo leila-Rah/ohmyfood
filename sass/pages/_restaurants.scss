@@ -57,9 +57,9 @@ header > div {
 }
 
 main img {
-    height: 300px;
+    height: 380px;
     object-fit: cover;
-    object-position: 50% 70%;
+    
     width: 100%;
 }
 
@@ -139,6 +139,7 @@ main img {
     text-decoration-color:rgb(158,226,208);
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
+    text-transform: uppercase;
 }
     /* Barre verte sous titre de menu */
 

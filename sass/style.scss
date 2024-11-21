@@ -30,9 +30,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0;
-  margin-top: 1.5rem;
+ 
   flex-basis: 100%;
 }
 
@@ -50,28 +50,34 @@ header {
     border:none;
     
 }
-.btn-explore label {
+.btn-explore p{
+  margin-bottom: 3rem;
+  align-content: center;
+
+}
+.btn-explore a {
   padding: 1rem;
   color: white;
   width:232px;
   border-radius: 2rem;
-  font-size: 1.3rem;
+  font-size:16px;
   background: linear-gradient(var(--secondary), var(--primary));
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   box-shadow: 0 3px 10px var(--darkgray);
+  text-decoration: none;
 }
-.btn-explore label:hover {
+.btn-explore a:hover {
   cursor: pointer;
   transform: scale(1.02);
   box-shadow: 0 3px 10px var(--secondary);
 }
 
 .btn-explore {
-  @include flex-j; 
+  display: block;
     flex-wrap: wrap;
     background-color: #f6f6f6;
     text-align: center;
+    width: 100%;
+    height: 280px;
  }
   h2{
     display:flex;
@@ -129,7 +135,7 @@ header {
     flex-wrap: wrap;
    background-color: #f6f6f6;
     padding-bottom: 4rem;
-    gap:2rem;
+   
 }
 .restaurants .card {
   cursor: pointer;
@@ -200,7 +206,7 @@ header {
   }
   .restaurants h2 {
     display: flex;
-    padding:10px 20px;
+    
     width: 100%;
 
  }
@@ -209,14 +215,22 @@ header {
      display: flex;
      flex-basis: 90%;
      min-width: 210px;
-     margin-top: 1rem;
+     
    }
  }
  
   .violet-icon{
     color: #9356dc;
   }
-  
+  .footer{
+    padding-left: 1rem;
+  }
+  .footer h4{
+    margin-top: 2rem;
+    font-size: 18px;
+    padding:2rem 0 0;
+}
+
   
  
 

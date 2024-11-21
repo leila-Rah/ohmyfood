@@ -68,11 +68,9 @@ header > div {
 }
 
 main img {
-  height: 300px;
+  height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 70%;
-     object-position: 50% 70%;
   width: 100%;
 }
 
@@ -162,6 +160,7 @@ main img {
   text-decoration-color: rgb(158, 226, 208);
   text-decoration-thickness: 3px;
   text-underline-offset: 7px;
+  text-transform: uppercase;
 }
 
 /* Barre verte sous titre de menu */
@@ -319,7 +318,7 @@ body {
 }
 
 header h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .bold {
@@ -327,16 +326,18 @@ header h1 {
 }
 
 .btn-explore h1 {
-  font-family: roboto;
-  font-size: 1.8rem;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .btn-explore p {
-  font-size: 1.2rem;
+  font-size: 18px;
+  font-family: "roboto";
+  font-weight: 300;
 }
 
 .titre h1 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .choix {
@@ -347,16 +348,11 @@ header h1 {
 .footer {
   background-color: #353535;
   color: white;
-  padding-left: 1rem;
 }
 
 .footer a {
   text-decoration: none;
   color: white;
-}
-
-.footer h4 {
-  margin-top: 2rem;
 }
 
 h3 {
@@ -371,7 +367,7 @@ h3 {
   font-family: "Shrikhand", cursive;
 }
 
-footer h1 {
+footer h4 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
 }
@@ -404,9 +400,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0;
-  margin-top: 1.5rem;
   flex-basis: 100%;
 }
 
@@ -425,30 +420,35 @@ header {
   border: none;
 }
 
-.btn-explore label {
+.btn-explore p {
+  margin-bottom: 3rem;
+  align-content: center;
+}
+
+.btn-explore a {
   padding: 1rem;
   color: white;
   width: 232px;
   border-radius: 2rem;
-  font-size: 1.3rem;
+  font-size: 16px;
   background: linear-gradient(var(--secondary), var(--primary));
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   box-shadow: 0 3px 10px var(--darkgray);
+  text-decoration: none;
 }
 
-.btn-explore label:hover {
+.btn-explore a:hover {
   cursor: pointer;
   transform: scale(1.02);
   box-shadow: 0 3px 10px var(--secondary);
 }
 
 .btn-explore {
-  display: flex;
-  justify-content: center;
+  display: block;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   text-align: center;
+  width: 100%;
+  height: 280px;
 }
 
 h2 {
@@ -509,7 +509,6 @@ h2 {
   flex-wrap: wrap;
   background-color: #f6f6f6;
   padding-bottom: 4rem;
-  gap: 2rem;
 }
 
 .restaurants .card {
@@ -597,7 +596,6 @@ h2 {
 
 .restaurants h2 {
   display: flex;
-  padding: 10px 20px;
   width: 100%;
 }
 
@@ -606,9 +604,18 @@ h2 {
     display: flex;
     flex-basis: 90%;
     min-width: 210px;
-    margin-top: 1rem;
   }
 }
 .violet-icon {
   color: #9356dc;
+}
+
+.footer {
+  padding-left: 1rem;
+}
+
+.footer h4 {
+  margin-top: 2rem;
+  font-size: 18px;
+  padding: 2rem 0 0;
 }/*# sourceMappingURL=style.css.map */

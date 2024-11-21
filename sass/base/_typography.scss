@@ -1,23 +1,25 @@
 body{
     font-family:"roboto",serif;
-    
-    
+     
 }
 header h1{
-    font-family : 'Shrikhand', cursive;
+    font-family : 'Shrikhand', sans-serif;
 }
 .bold {
     font-weight: bold;
 }
 .btn-explore h1{
-    font-family: roboto;
-    font-size: 1.8rem;
+    font-size: 24px;
+    font-weight: 700;
 }
 .btn-explore p{
-    font-size: 1.2rem;
+    font-size:18px;
+    font-family: "roboto";
+    font-weight: 300;
+
 }
 .titre h1 {
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand", sans-serif;
 }
 .choix{
     
@@ -27,16 +29,12 @@ header h1{
 .footer{
     background-color: #353535;
     color: white;
-    padding-left: 1rem;
+    
 }
 .footer a {
     text-decoration: none;
     color: white;
 }
-.footer h4{
-    margin-top: 2rem;
-}
-
 h3{
   font-family: roboto;
 }
@@ -46,7 +44,7 @@ h3{
  .titre-menu h1 {
   font-family: 'Shrikhand', cursive;
 }
-footer h1 {
+footer h4 {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
 }
