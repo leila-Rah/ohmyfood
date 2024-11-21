@@ -328,7 +328,11 @@ header h1 {
 
 .btn-explore h1 {
   font-family: roboto;
-  font-size: 30px;
+  font-size: 1.8rem;
+}
+
+.btn-explore p {
+  font-size: 1.2rem;
 }
 
 .titre h1 {
@@ -384,10 +388,6 @@ body {
   padding-left: 1rem;
 }
 
-h2 {
-  padding-left: 2rem;
-}
-
 header {
   text-align: center;
 }
@@ -400,8 +400,14 @@ header {
   gap: 10px;
 }
 
-.btn-explore {
-  text-align: center;
+.btn-explore h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0;
+  margin-top: 1.5rem;
+  flex-basis: 100%;
 }
 
 .fa-store:before {
@@ -417,11 +423,6 @@ header {
   color: white;
   padding: 1rem;
   border: none;
-}
-
-.main-container {
-  max-width: 1440px;
-  width: 100%;
 }
 
 .btn-explore label {
@@ -442,21 +443,24 @@ header {
   box-shadow: 0 3px 10px var(--secondary);
 }
 
-.btn-explore p {
-  font-size: 16px;
-  margin: 0;
-  padding: 0 1rem;
-  flex-basis: 100%;
-}
-
 .btn-explore {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #f6f6f6;
+  text-align: center;
 }
 
-.titre-fonctionnement h2 {
-  padding-left: 2rem;
+h2 {
+  display: flex;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 4rem;
+}
+
+.main-container {
+  max-width: 1440px;
+  width: 100%;
 }
 
 .fonctionnement {
@@ -503,9 +507,9 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 3rem;
-  gap: 1rem;
+  background-color: #f6f6f6;
+  padding-bottom: 4rem;
+  gap: 2rem;
 }
 
 .restaurants .card {
@@ -592,6 +596,8 @@ header {
 }
 
 .restaurants h2 {
+  display: flex;
+  padding: 10px 20px;
   width: 100%;
 }
 

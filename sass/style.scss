@@ -16,9 +16,7 @@ body{
     font-size: 18px;
     padding-left: 1rem;
 }
-h2{
-    padding-left: 2rem;
-}
+
 header {
  text-align: center;
 }
@@ -27,9 +25,17 @@ header {
     background-color: rgba(234, 234, 234, 1);
    gap: 10px;
 }
-.btn-explore{
-    text-align: center;
+//.. partie titre + exporer //
+.btn-explore h1  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin: 0;
+  margin-top: 1.5rem;
+  flex-basis: 100%;
 }
+
 .fa-store:before{
   color: #9356dc;
 }
@@ -43,11 +49,6 @@ header {
     padding: 1rem;
     border:none;
     
-}
-.main-container{
-  max-width: 1440px;
-  width: 100%;
-
 }
 .btn-explore label {
   padding: 1rem;
@@ -65,18 +66,25 @@ header {
   transform: scale(1.02);
   box-shadow: 0 3px 10px var(--secondary);
 }
-.btn-explore p {
-  font-size: 16px;
-  margin: 0;
-  padding: 0 1rem;
-  flex-basis: 100%;
-}
+
 .btn-explore {
   @include flex-j; 
     flex-wrap: wrap;
+    background-color: #f6f6f6;
+    text-align: center;
  }
-.titre-fonctionnement h2{
-    padding-left: 2rem;
+  h2{
+    display:flex;
+    width: 100%;
+    padding:10px 20px;
+    margin-top: 4rem;
+}
+
+// ** partie main ** //
+
+.main-container{
+  max-width: 1440px;
+  width: 100%;
 }
 .fonctionnement {
   display: flex;
@@ -110,20 +118,18 @@ header {
     font-weight: 500;
     text-align: start;
     margin-bottom: 2rem;
-    
-   
 }
 .choix i{
     padding-right: 1rem;
 }
+// ** partie restaurants  ** //
 
 .restaurants {
    @include flex-j; 
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 3rem;
-    gap:1rem;
-        
+   background-color: #f6f6f6;
+    padding-bottom: 4rem;
+    gap:2rem;
 }
 .restaurants .card {
   cursor: pointer;
@@ -193,7 +199,10 @@ header {
     
   }
   .restaurants h2 {
+    display: flex;
+    padding:10px 20px;
     width: 100%;
+
  }
  @media (max-width: 660px) {
    .restaurants .card {
