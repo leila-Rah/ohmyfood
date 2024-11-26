@@ -10,7 +10,7 @@ header h1{
     font-size: 24px;
 }
 .btn-explore h1{
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 700;
 }
 .btn-explore p{
@@ -38,6 +38,11 @@ header h1{
 }
 h3{
   font-family: roboto;
+  font-size: 16px;
+  font-weight: 300;
+}
+p{
+    font-size: 17px;
 }
  .explore-restaurants{
   font-weight:bold;
@@ -49,10 +54,34 @@ footer h4 {
   font-family: 'Shrikhand', cursive;
   font-weight: normal;
 }
+.entrees h4, .plats h4, .desserts h4 {
+    font-size: 18px;
+    font-family: "roboto";
+    font-weight: 500;
+}
+.entrees p, .plats p, .desserts p{
+    font-size: 15px;
+    font-family: "roboto";
+    font-weight: 300;
+}
+@media only screen and (min-width: 1440px) {
+    .btn-explore h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .fonctionnement h2{
+        
+            margin: 2rem 0 0 14rem;
+        }
+        .restaurants h2{
+            margin: 2rem 0 0 3rem;
+            
+        }
+    }
+
+
   
-  
-  
-  
+
 
   
   

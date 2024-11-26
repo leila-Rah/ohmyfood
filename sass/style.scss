@@ -91,17 +91,16 @@ header {
 // ** partie main ** //
 
 .main-container{
-  max-width: 1440px;
-  width: 100%;
+ width: 100%;
 }
 .main-fonctionnement{
  display: flex;
  flex-direction: column;
- width: 100%;
+ margin-top: 1rem;
 }
  h2{
-  margin: 2rem 0 0 7rem;
-  margin-top: 6rem;
+  margin: 2rem 0 0 4rem;
+ 
 }
 .fonctionnement {
   display: flex;
@@ -146,7 +145,7 @@ header {
     flex-wrap: wrap;
    background-color: rgba(246,246,246,1);
     gap:2rem;
-   
+   margin-top: 1rem;
 }
 .restaurants .card {
   cursor: pointer;
@@ -161,7 +160,7 @@ header {
 .restaurants .card img {
     width: 100%;
     object-fit: cover;
-     max-height: 150px;
+    height: 231px;
     border-radius: 1rem 1rem 0 0;
 }
 .restaurants .card .description {
@@ -249,12 +248,27 @@ header {
       padding:2rem 0 0;
     }
            
-        @media screen and (min-width: 1044px) {
-          .footer {
-             display:flex; 
-             height: 90px;
+        @media only screen and (min-width: 1440px) {
+
+          .restaurants .card img {
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            height: 291px;
+            border-radius: 1rem 1rem 0 0;
+        }
+          .footer{
+            display:flex;
+            align-content:end;
+            justify-content: right;
+            
           }
-          
+          .footer__liste{
+            display: flex;
+             gap:1rem;
+            margin:2rem
+
+          }
         }
           
          
