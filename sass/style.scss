@@ -23,19 +23,24 @@ header {
 .ville{
     @include flex-just;
     background-color: rgba(234, 234, 234, 1);
-   gap: 10px;
+   
 }
-//.. partie titre + exporer //
+.ville .fa-solid, .fas{
+  color:#000;
+}
+//.. partie titre + explorer //
 .btn-explore h1  {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2rem 2rem 0;
   margin: 0;
- 
   flex-basis: 100%;
 }
-
+.fonctionnement .fa-solid, .fas{
+  font-weight: 900;
+  color: rgba(126, 126, 126, 1);
+}
 .fa-store:before{
   color: #9356dc;
 }
@@ -72,10 +77,8 @@ header {
 }
 
 .btn-explore {
-  display: block;
     flex-wrap: wrap;
-    background-color: #f6f6f6;
-    text-align: center;
+    background-color: rgba(246,246,246,1);
     width: 100%;
     height: 280px;
  }
@@ -83,14 +86,22 @@ header {
     display:flex;
     width: 100%;
     padding:10px 20px;
-    margin-top: 7rem;
-}
+  }
 
 // ** partie main ** //
 
 .main-container{
   max-width: 1440px;
   width: 100%;
+}
+.main-fonctionnement{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+ h2{
+  margin: 2rem 0 0 7rem;
+  margin-top: 6rem;
 }
 .fonctionnement {
   display: flex;
@@ -101,7 +112,7 @@ header {
   padding:1rem;
   width: 100%;
   gap:2rem;
-  margin-bottom:3rem;
+  
 }
 .choix span{
     left: -2rem;
@@ -133,8 +144,8 @@ header {
 .restaurants {
    @include flex-j; 
     flex-wrap: wrap;
-   background-color: #f6f6f6;
-    padding-bottom: 4rem;
+   background-color: rgba(246,246,246,1);
+    gap:2rem;
    
 }
 .restaurants .card {
@@ -145,7 +156,7 @@ header {
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 3px 8px darkgray;
-  margin-top:1rem;
+ 
 }
 .restaurants .card img {
     width: 100%;
@@ -218,26 +229,34 @@ header {
      
    }
  }
- 
-  .violet-icon{
+   .violet-icon{
     color: #9356dc;
   }
+  /*   FOOTER  */
   .footer{
-    padding-left: 1rem;
+    background-color: var(--grayblack);
+   color: white;
+    padding:0 0 1rem;
+    margin-top: 4rem;
   }
-  .footer h4{
-    margin-top: 2rem;
-    font-size: 18px;
-    padding:2rem 0 0;
-}
-
-  
- 
-
-
-
-
-
-
-  
-  
+  .footer  .fas{
+    color:#FAFAFA;
+  }
+    /* titre footer */
+    .footer-titre{
+      margin-top: 2rem;
+      font-size: 18px;
+      padding:2rem 0 0;
+    }
+           
+        @media screen and (min-width: 1044px) {
+          .footer {
+             display:flex; 
+             height: 90px;
+          }
+          
+        }
+          
+         
+        
+       

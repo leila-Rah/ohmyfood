@@ -103,6 +103,7 @@ main img {
 .layout-star:hover .fa-solid.fa-heart { 
     display: inline;
 }
+
 /*   PANIER  */
 .panier {
     position: absolute;
@@ -123,6 +124,7 @@ main img {
 
 .menus {
    @include flex-col;
+   background-color: rgba(246,246,246,1);
 }
 
 .entrees, .plats, .desserts {
@@ -215,29 +217,42 @@ main img {
 .description:hover, .prix:hover {
     cursor: pointer;
 }
-
-bodymain .menus .articles{
+body main .menus {
+    border: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body main .menus .articles{
+    background-color: rgba(246,246,246,1);
     flex-wrap: wrap;
     gap: 5px;
+    padding-left: 2rem;
+    width: 100%;
+    
 }
 body section{
     border:0;
     margin-top: -4rem;
 }
-
-/*   FOOTER  */
-
-footer {
-    background-color: var(--grayblack);
+body main .btn-explore label {
+    display: flex;
+    justify-content: center;
     color: white;
-    padding:0 0 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 3px 10px darkgray;
+    transition: 100ms;
 }
-
-footer a {
-    text-decoration: none;
-    color: white;
+.btn-explore {
+    flex-wrap: wrap;
+    text-align: center;
+  
+   
 }
 /*  MEDIA QUERIES  */
 
@@ -266,8 +281,7 @@ footer a {
     
     }
     
-    
-    
+     
 }
 
 /*   KeyFrames  */
