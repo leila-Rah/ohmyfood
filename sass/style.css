@@ -282,8 +282,29 @@ body main .btn-explore a {
 }
 
 .btn-explore {
-  flex-wrap: wrap;
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+  height: 0px;
   text-align: center;
+}
+
+/*   FOOTER  */
+.footer {
+  background-color: var(--grayblack);
+  color: white;
+  padding: 0 0 1rem;
+  margin-top: 4rem;
+}
+
+.footer .fas {
+  color: #FAFAFA;
+}
+
+/* titre footer */
+.footer-titre {
+  margin-top: 2rem;
+  font-size: 18px;
+  padding: 2rem 0 0;
 }
 
 /*  MEDIA QUERIES  */
