@@ -58,6 +58,7 @@ header {
 .btn-explore p{
   margin-bottom: 3rem;
   align-content: center;
+  text-align: center;
 
 }
 .btn-explore a {
@@ -245,7 +246,11 @@ header {
     .footer-titre{
       margin-top: 2rem;
       font-size: 18px;
-      padding:2rem 0 0;
+      padding:2rem 1rem 0;
+    }
+    .footer a {
+      display:flex;
+      gap: 1rem;
     }
            
         @media only screen and (min-width: 1440px) {
