@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+body main {
+  background-color: #EAEAEA;
+}
+
 header {
   box-shadow: 0 5px 10px lightgrey;
 }
@@ -80,10 +84,12 @@ main img {
   border-radius: 3rem 3rem 0 0;
   background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
   flex-basis: 95%;
   padding-left: 2rem;
+  background-color: #EAEAEA;
 }
 
 .titre-menu i {
@@ -142,11 +148,10 @@ main img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(246, 246, 246);
 }
 
 .entrees, .plats, .desserts {
-  padding: 0 1rem 3rem 0;
+  padding: 0 1rem 1rem 0;
 }
 
 .entrees h4, .plats h4, .desserts h4,
@@ -256,7 +261,6 @@ body main .menus {
 }
 
 body main .menus .articles {
-  background-color: rgb(246, 246, 246);
   flex-wrap: wrap;
   gap: 5px;
   padding-left: 2rem;
@@ -281,7 +285,6 @@ body main .btn-explore a {
 }
 
 .btn-explore {
-  background-color: rgb(246, 246, 246);
   width: 100%;
   height: 0px;
   text-align: center;
@@ -292,18 +295,10 @@ body main .btn-explore a {
   background-color: var(--grayblack);
   color: white;
   padding: 0 0 1rem;
-  margin-top: 4rem;
 }
 
 .footer .fas {
   color: #FAFAFA;
-}
-
-/* titre footer */
-.footer-titre {
-  margin-top: 2rem;
-  font-size: 18px;
-  padding: 2rem 0 0;
 }
 
 /*  MEDIA QUERIES  */
@@ -521,7 +516,6 @@ header {
 
 .btn-explore {
   flex-wrap: wrap;
-  background-color: rgb(246, 246, 246);
   width: 100%;
   height: 280px;
 }
@@ -708,7 +702,12 @@ h2 {
 .footer-titre {
   margin-top: 2rem;
   font-size: 18px;
-  padding: 2rem 0 0;
+  padding: 2rem 1rem 0;
+}
+
+.footer a {
+  display: flex;
+  gap: 1rem;
 }
 
 @media only screen and (min-width: 1440px) {
