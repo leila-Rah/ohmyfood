@@ -22,9 +22,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
 }
-body main{
-    background-color: #EAEAEA;
-}
+
 header {
     box-shadow: 0 5px 10px lightgrey;
 }
@@ -75,9 +73,6 @@ main img {
     align-items: center;
     gap:2rem;
     flex-basis: 95%;
-    padding-left: 2rem;
-    background-color: #EAEAEA;
-    
 }
 .titre-menu i {
     display: flex;
@@ -132,7 +127,7 @@ main img {
 }
 
 .entrees, .plats, .desserts {
-    padding: 0 1rem 1rem 0;
+    padding: 0 1rem 3rem 0;
 }
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
