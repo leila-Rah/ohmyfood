@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+body main {
+  background-color: #f6f6f6;
+}
+
 header {
   box-shadow: 0 5px 10px lightgrey;
 }
@@ -255,7 +259,10 @@ body main .menus {
 }
 
 body main .menus .articles {
+  background-color: rgb(246, 246, 246);
   flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 2rem;
 }
 
 body section {
@@ -264,22 +271,20 @@ body section {
 }
 
 body main .btn-explore a {
-  display: flex;
   justify-content: center;
   color: white;
-  border-radius: 2rem;
-  font-size: 1.3rem;
+  border-radius: 25px;
+  font-size: 16px;
   background: linear-gradient(#ff79da, #9356dc);
-  padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-  margin-bottom: 3rem;
+  padding: 25px;
   box-shadow: 0 3px 10px darkgray;
   transition: 100ms;
 }
 
-.btn-explore {
-  background-color: rgb(246, 246, 246);
+body main .btn-explore {
+  display: flex;
   width: 100%;
-  height: 0px;
+  height: 25px;
   text-align: center;
 }
 
