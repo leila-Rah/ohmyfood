@@ -124,7 +124,6 @@ main img {
 
 .menus {
    @include flex-col;
-   background-color: rgba(246,246,246,1);
 }
 
 .entrees, .plats, .desserts {
@@ -224,6 +223,7 @@ body main .menus {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #F6F6F6;
 }
 body main .menus .articles{
     background-color: rgba(246,246,246,1);
