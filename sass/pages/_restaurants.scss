@@ -21,7 +21,9 @@
 body {
     box-sizing: border-box;
     margin: 0 auto;
-    
+}
+body main{
+  background-color: #f6f6f6;  
 }
 header {
     box-shadow: 0 5px 10px lightgrey;
@@ -69,11 +71,10 @@ main img {
     border-radius: 3rem 3rem 0 0;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap:2rem;
     flex-basis: 95%;
-    padding-left: 2rem;;
-    
 }
 .titre-menu i {
     display: flex;
@@ -124,6 +125,7 @@ main img {
 
 .menus {
    @include flex-col;
+   background-color: rgba(246,246,246,1);
 }
 
 .entrees, .plats, .desserts {
@@ -236,44 +238,37 @@ body main .menus .articles{
 }
 body section{
     border:0;
-    margin-top: -4rem;
+    padding:0 3rem;
 }
 body main .btn-explore a {
-    display: flex;
     justify-content: center;
     color: white;
-    border-radius: 2rem;
-    font-size: 1.3rem;
+    border-radius: 25px;
+    font-size: 16px;
     background: linear-gradient(#ff79da, #9356dc);
-    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    margin-bottom: 3rem;
+    padding: 25px;
     box-shadow: 0 3px 10px darkgray;
     transition: 100ms;
 }
-.btn-explore {
-    background-color: rgb(246, 246, 246);
+body main .btn-explore {
+    display: flex;
     width: 100%;
-    height: 0px;
+    height: 25px;
     text-align: center;
   
    
 }
-/*   FOOTER  */
+    /*   FOOTER  */
 .footer{
-    background-color: var(--grayblack);
+   background-color: var(--grayblack);
    color: white;
     padding:0 0 1rem;
-    margin-top: 4rem;
-  }
+    
+}
   .footer  .fas{
     color:#FAFAFA;
   }
-    /* titre footer */
-    .footer-titre{
-      margin-top: 2rem;
-      font-size: 18px;
-      padding:2rem 0 0;
-    }
+   
 /*  MEDIA QUERIES  */
 
 @media (max-width : 768px) {
@@ -298,7 +293,7 @@ body main .btn-explore a {
         width: 100%;
         white-space: nowrap;
         text-overflow: ellipsis;
-        margin-top: 2rem;
+        margin-top: 1rem;
     
     }
     
