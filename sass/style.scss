@@ -8,9 +8,8 @@
 
 body{
  margin:0px;
- display: flex;
-    justify-content: center;
-    flex-direction: column;
+ @include flex-di;
+ justify-content: center;
 }
 .ville h3{
     font-size: 18px;
