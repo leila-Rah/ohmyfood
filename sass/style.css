@@ -54,21 +54,19 @@ header > div {
 
 .logo {
   display: flex;
-  flex-basis: 2rem;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  flex-basis: 2rem;
 }
 
 .logo i {
-  font-size: 2rem;
-  color: black;
   cursor: pointer;
 }
 
 .titre {
   display: flex;
-  flex-basis: 100%;
   justify-content: center;
+  flex-basis: 100%;
 }
 
 main img {
@@ -84,7 +82,7 @@ main img {
   border-radius: 3rem 3rem 0 0;
   background-color: #f6f6f6;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
   flex-basis: 95%;
@@ -101,7 +99,6 @@ main img {
   width: 15%;
   height: 50px;
   align-items: center;
-  font-size: 1.5rem;
 }
 
 .layout-star .fa-solid.fa-heart {
@@ -352,6 +349,11 @@ body {
   font-family: "roboto", serif;
 }
 
+.logo i {
+  font-size: 2rem;
+  color: black;
+}
+
 header h1 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -372,6 +374,20 @@ header h1 {
   font-weight: 300;
 }
 
+.fonctionnement .fa-solid, .fas {
+  font-weight: 900;
+  color: rgb(126, 126, 126);
+}
+
+.fa-store:before {
+  color: #9356dc;
+}
+
+.btn-explore a {
+  font-size: 16px;
+  color: white;
+}
+
 .titre h1 {
   font-family: "Shrikhand", sans-serif;
 }
@@ -383,9 +399,18 @@ header h1 {
   font-weight: 500;
 }
 
+.choix span {
+  font-weight: bold;
+  color: white;
+}
+
 .footer {
   background-color: #353535;
   color: white;
+}
+
+.footer .fas {
+  color: #FAFAFA;
 }
 
 .footer a {
@@ -430,6 +455,10 @@ footer h4 {
   font-weight: 300;
 }
 
+.layout-star {
+  font-size: 1.5rem;
+}
+
 @media only screen and (min-width: 1440px) {
   .btn-explore h1 {
     font-size: 40px;
@@ -445,8 +474,8 @@ footer h4 {
 body {
   margin: 0px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .ville h3 {
@@ -471,17 +500,8 @@ header {
 
 .btn-explore h1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.fonctionnement .fa-solid, .fas {
-  font-weight: 900;
-  color: rgb(126, 126, 126);
-}
-
-.fa-store:before {
-  color: #9356dc;
+  justify-content: center;
 }
 
 .explore-restaurants {
@@ -502,9 +522,7 @@ header {
 
 .btn-explore a {
   padding: 1rem;
-  color: white;
   border-radius: 2rem;
-  font-size: 16px;
   background: linear-gradient(var(--secondary), var(--primary));
   box-shadow: 0 3px 10px var(--darkgray);
   text-decoration: none;
@@ -520,7 +538,7 @@ header {
 .btn-explore {
   background-color: #f6f6f6;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -541,7 +559,7 @@ body main {
 
 .main-fonctionnement {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
@@ -549,7 +567,7 @@ body main {
 
 .fonctionnement {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   flex-direction: column;
 }
@@ -560,17 +578,15 @@ body main {
   position: relative;
   height: 40px;
   border-radius: 20px;
-  font-weight: bold;
   background-color: #9356dc;
-  color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .choix {
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 25px;
   padding: 10px;
@@ -584,18 +600,18 @@ body main {
 
 .choix i {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
 .restaurants {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: rgb(246, 246, 246);
   gap: 20px;
   margin-top: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .bold {
@@ -701,10 +717,6 @@ body main {
   color: white;
   padding: 0 0 1rem;
   margin-top: 4rem;
-}
-
-.footer .fas {
-  color: #FAFAFA;
 }
 
 .footer a {
