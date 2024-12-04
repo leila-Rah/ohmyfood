@@ -2,6 +2,10 @@ body{
     font-family:"roboto",serif;
      
 }
+.logo i {
+    font-size: 2rem;
+    color: black;
+}
 header h1{
     font-family : 'Shrikhand', sans-serif;
 }
@@ -19,6 +23,17 @@ header h1{
     font-weight: 300;
 
 }
+.fonctionnement .fa-solid, .fas{
+    font-weight: 900;
+    color: rgba(126, 126, 126, 1);
+  }
+.fa-store:before{
+    color: #9356dc;
+}
+.btn-explore a{
+    font-size:16px;
+    color: white;
+}
 .titre h1 {
     font-family: "Shrikhand", sans-serif;
 }
@@ -29,11 +44,18 @@ header h1{
     font-size: 16px;
     font-weight: 500;
 }
+.choix span{
+    font-weight: bold;
+    color: white;
+}
 .footer{
     background-color: #353535;
     color: white;
     
 }
+.footer  .fas{
+    color:#FAFAFA;
+  }
 .footer a {
     text-decoration: none;
     color: white;
@@ -67,6 +89,9 @@ footer h4 {
     font-size: 15px;
     font-family: "roboto";
     font-weight: 300;
+}
+.layout-star{
+    font-size: 1.5rem; 
 }
 @media only screen and (min-width: 1440px) {
     .btn-explore h1{

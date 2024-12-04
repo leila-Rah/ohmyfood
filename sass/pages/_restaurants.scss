@@ -41,27 +41,21 @@ header > div {
     display: flex;
 }
 .logo {
-    display: flex;
+ @include flex-col;   
     flex-basis: 2rem;
-    align-items: center;
-    justify-content: center;
 }
 .logo i {
-    font-size: 2rem;
-    color: black;
-    cursor: pointer;
+   cursor: pointer;
 }
 
 .titre {
-    display: flex;
+   @include flex-j; 
     flex-basis: 100%;
-    justify-content: center;
 }
 
 main img {
     height: 380px;
     object-fit: cover;
-    
     width: 100%;
 }
 
@@ -70,9 +64,7 @@ main img {
     top: -5rem;
     border-radius: 3rem 3rem 0 0;
     background-color: #f6f6f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-col;
     gap:2rem;
     flex-basis: 95%;
 }
@@ -86,7 +78,6 @@ main img {
     width: 15%;
     height: 50px;
     align-items: center;
-    font-size: 1.5rem;
 }
 .layout-star .fa-solid.fa-heart { 
     display: none;

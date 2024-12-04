@@ -29,17 +29,9 @@ header {
 }
 //.. partie titre + explorer //
 .btn-explore h1  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @include flex-just;
 }
-.fonctionnement .fa-solid, .fas{
-  font-weight: 900;
-  color: rgba(126, 126, 126, 1);
-}
-.fa-store:before{
-  color: #9356dc;
-}
+
 .explore-restaurants{
     border-radius: 25px;
     width: 218px;
@@ -58,9 +50,7 @@ header {
 }
 .btn-explore a {
   padding: 1rem;
-  color: white;
-  border-radius: 2rem;
-  font-size:16px;
+   border-radius: 2rem;
   background: linear-gradient(var(--secondary), var(--primary));
   box-shadow: 0 3px 10px var(--darkgray);
   text-decoration: none;
@@ -74,9 +64,7 @@ header {
 
 .btn-explore {
     background-color: #f6f6f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-col;
     flex-direction: column;
     text-align: center;
  }
@@ -94,18 +82,14 @@ body main {
  width: 100%;
 }
 .main-fonctionnement{
- display: flex;
- justify-content: center;
- align-items: center;
+ @include flex-col;
  flex-direction: column;
  margin-top: 10px;
 
 }
  
 .fonctionnement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-col;
   flex-direction: column;
   
 }
@@ -115,17 +99,11 @@ body main {
     position: relative;
     height: 40px;
     border-radius: 20px;
-    font-weight: bold;
     background-color: #9356dc;
-    color: white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-col;
 }
 .choix{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-col;
     border-radius: 25px;
     padding: 10px;
     border: none;
@@ -136,21 +114,17 @@ body main {
     gap: 10px;
 }
 .choix i{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-col;
   
 }
 // ** partie restaurants  ** //
 
 .restaurants  {
- display: flex;
+ @include flex-col;
     flex-wrap: wrap;
    background-color: rgba(246,246,246,1);
     gap:20px;
    margin-top: 10px;
-   align-items: center;
-   justify-content: center;
 }
 .bold{
   margin-left: 30px;
@@ -241,9 +215,7 @@ body main {
     padding:0 0 1rem;
     margin-top: 4rem;
   }
-  .footer  .fas{
-    color:#FAFAFA;
-  }
+  
   .footer a{
     gap:7px;
     display:flex;
