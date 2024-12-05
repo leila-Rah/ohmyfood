@@ -736,7 +736,7 @@ body main {
   padding: 2rem 1rem 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .restaurants .card img {
     width: 100%;
     -o-object-fit: cover;
