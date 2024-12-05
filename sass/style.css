@@ -651,6 +651,7 @@ body main {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 3px 8px darkgray;
+  margin-bottom: 25px;
 }
 
 .restaurants .card img {
@@ -755,8 +756,8 @@ body main {
   }
   .cards {
     display: grid;
-    grid-template-columns: 200px 200px;
-    gap: 10px;
+    grid-template-columns: 380px 380px;
+    gap: 25px;
   }
   .restaurants .card img {
     width: 100%;
