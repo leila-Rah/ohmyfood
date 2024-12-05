@@ -223,17 +223,12 @@ body main {
     gap:7px;
     display:flex;
   }
-    /* titre footer */
-    .footer-titre{
+  .footer-titre{
       margin-top: 2rem;
       font-size: 18px;
       padding:2rem 1rem 0;
     }
-    .footer a{
-      display: flex;
-      gap: 1rem;
-    }
-           
+            
         @media only screen and (min-width: 1440px) {
 
           .restaurants .card img {
@@ -252,7 +247,10 @@ body main {
           .footer__liste{
             display: flex;
              gap:1rem;
-            margin:2rem
+             margin:2rem
+             justify-content:flex-end;
+             flex-wrap: wrap;
+             padding: 0 2rem;
 
           }
         }
