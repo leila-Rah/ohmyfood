@@ -365,7 +365,7 @@ header h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
-.bold {
+.main- {
   font-weight: bold;
   font-size: 24px;
 }
@@ -485,6 +485,25 @@ body {
   justify-content: center;
 }
 
+body header .loader {
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  z-index: 1;
+  background: #353535;
+  overflow: hidden;
+  font: 5vw/100vh "Shrikhand";
+  font-size: 4rem;
+  text-align: center;
+  color: #9356dc;
+  backface-visibility: hidden;
+  animation: stop-loader 0.5s 3s forwards;
+  transform-origin: top right;
+}
+
 .ville h3 {
   font-size: 18px;
   padding-left: 1rem;
@@ -551,11 +570,6 @@ header {
   text-align: center;
 }
 
-h2 {
-  display: flex;
-  width: 100%;
-}
-
 body main {
   background-color: white;
 }
@@ -567,17 +581,18 @@ body main {
 .main-fonctionnement {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  flex-direction: column;
   margin-top: 10px;
+}
+
+.main-fonctionnement h2 {
+  padding: 2rem 1rem 0 2rem;
 }
 
 .fonctionnement {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .choix span {
@@ -622,8 +637,8 @@ body main {
   margin-top: 10px;
 }
 
-.bold {
-  margin-left: 30px;
+.restaurants h2 {
+  padding: 2rem 1rem 0 2rem;
 }
 
 .restaurants .card {
@@ -708,7 +723,7 @@ body main {
   padding: 0.5rem;
 }
 
-@media (max-width: 660px) {
+@media (min-width: 768px) {
   .restaurants .card {
     display: flex;
     flex-basis: 90%;
@@ -736,7 +751,11 @@ body main {
   padding: 2rem 1rem 0;
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 768px) {
+  .fonctionnement {
+    flex-direction: row;
+    display: flex;
+  }
   .restaurants .card img {
     width: 100%;
     -o-object-fit: cover;
@@ -754,5 +773,15 @@ body main {
     display: flex;
     gap: 1rem;
     margin: 2rem;
+  }
+}
+@keyframes stop-loader {
+  0% {
+    transform: scale(1);
+    background-color: lightblue;
+  }
+  100% {
+    transform: scale(0);
+    background-color: lightcoral;
   }
 }/*# sourceMappingURL=style.css.map */
