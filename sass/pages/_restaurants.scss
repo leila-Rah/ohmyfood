@@ -64,7 +64,7 @@ main img {
     top: -5rem;
     border-radius: 3rem 3rem 0 0;
     background-color: #f6f6f6;
-    @include flex-col;
+    @include flex-just;
     gap:2rem;
     flex-basis: 95%;
 }
@@ -285,6 +285,28 @@ body main .btn-explore {
     }
     
      
+}
+@media (max-width: 667px) {
+    body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
+        margin: 0;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+}
+@media (max-width: 667px) {
+    body main .menus .articles .entrees .article-menu .select-choix, body main .menus .articles .plats .article-menu .select-choix, body main .menus .articles .desserts .article-menu .select-choix {
+        display: flex
+;
+        justify-content: center;
+        background-color: #99E2D0;
+        color: white;
+        font-weight: bold;
+        font-size: 1.3rem;
+        align-items: center;
+        border-radius: 0 1rem 1rem 0;
+        width: 50px;
+        margin-right: -4rem;
+    }
 }
 
 /*   KeyFrames  */
