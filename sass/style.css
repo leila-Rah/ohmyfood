@@ -638,7 +638,8 @@ body main {
 }
 
 .restaurants h2 {
-  padding: 2rem 1rem 0 2rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 .restaurants .card {
@@ -751,6 +752,11 @@ body main {
   .fonctionnement {
     flex-direction: row;
     display: flex;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
   }
   .restaurants .card img {
     width: 100%;
