@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 @media only sreen and (min-width: 768px) {
@@ -345,6 +346,11 @@ body main .btn-explore {
     margin-right: -4rem;
   }
 }
+.fa-check-circle, .fa-circle-check {
+  --fa: "";
+  --fa--fa: "";
+}
+
 /*   KeyFrames  */
 @keyframes spin {
   0% {

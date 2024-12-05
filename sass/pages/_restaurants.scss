@@ -295,8 +295,7 @@ body main .btn-explore {
 }
 @media (max-width: 667px) {
     body main .menus .articles .entrees .article-menu .select-choix, body main .menus .articles .plats .article-menu .select-choix, body main .menus .articles .desserts .article-menu .select-choix {
-        display: flex
-;
+        display: flex;
         justify-content: center;
         background-color: #99E2D0;
         color: white;
@@ -307,6 +306,10 @@ body main .btn-explore {
         width: 50px;
         margin-right: -4rem;
     }
+}
+.fa-check-circle, .fa-circle-check {
+    --fa: "\f058";
+    --fa--fa: "\f058\f058";
 }
 
 /*   KeyFrames  */
