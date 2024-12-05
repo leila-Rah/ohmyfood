@@ -574,9 +574,10 @@ body main {
 
 .fonctionnement {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .choix span {
@@ -720,8 +721,6 @@ body main {
 
 /*   FOOTER  */
 .footer {
-  background-color: var(--grayblack);
-  color: white;
   padding: 0 0 1rem;
   margin-top: 4rem;
 }
@@ -731,19 +730,13 @@ body main {
   display: flex;
 }
 
-/* titre footer */
 .footer-titre {
   margin-top: 2rem;
   font-size: 18px;
   padding: 2rem 1rem 0;
 }
 
-.footer a {
-  display: flex;
-  gap: 1rem;
-}
-
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .restaurants .card img {
     width: 100%;
     -o-object-fit: cover;
@@ -753,8 +746,9 @@ body main {
   }
   .footer {
     display: flex;
-    align-content: end;
-    justify-content: right;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0 1rem 1.5rem;
   }
   .footer__liste {
     display: flex;
