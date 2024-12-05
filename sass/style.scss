@@ -90,8 +90,9 @@ body main {
 }
  
 .fonctionnement {
-  @include flex-col;
-  flex-direction: column;
+  @include flex-just;
+  flex-wrap: wrap;
+  gap: 30px;
   
 }
 .choix span{
@@ -229,7 +230,8 @@ body main {
       padding:2rem 1rem 0;
     }
             
- 
+    @media (min-width: 1440px) {
+
   .restaurants .card img {
     width: 100%;
     -o-object-fit: cover;
@@ -237,20 +239,21 @@ body main {
     height: 291px;
     border-radius: 1rem 1rem 0 0;
   }
-  .footer{
-   display:flex;
-   align-content:end;
-   justify-content: right;
-  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0 1rem 1.5rem;
+}
   .footer__liste{
     display: flex;
     gap:1rem;
     margin:2rem
-    justify-content : flex-end;
+    justify-content:flex-end;
     flex-wrap: wrap;
     padding: 0 2rem;
   }
-  
+  }
           
          
         
