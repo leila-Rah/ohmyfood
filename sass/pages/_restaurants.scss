@@ -23,7 +23,7 @@ body {
     margin: 0 auto;
 }
 body main{
-  background-color: #f6f6f6;  
+  background-color: #F6F6F6;  
 }
 header {
     box-shadow: 0 5px 10px lightgrey;
@@ -196,17 +196,35 @@ main img {
 }
 .prix {
     display: flex;
-    width: 100%;
     font-weight: bold;
-    align-items: flex-end;
-    justify-content:flex-end;
-    padding: 0 1rem 1rem 0;
-    
+    padding:36px 5px 0 0;
+    right:24px;
+    position:absolute;
+      
 }
-.select-choix {
-   @include flex-just;
-            
-}
+.menu__valider{ 
+position: relative;
+right: -60px;
+height: 70px;
+width: 60px;
+display: inline-block;
+-webkit-transform: translateX(0px);
+-ms-transform: translateX(0px);
+transform: translateX(0px);
+-webkit-transition: all 250ms ease-in-out;
+-o-transition: all 250ms ease-in-out;
+transition: all 250ms ease-in-out;
+background-color: #99e2d0;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+}        
 .description:hover, .prix:hover {
     cursor: pointer;
 }
@@ -231,12 +249,15 @@ body main .btn-explore a {
     @include flex-just;
     color: white;
     border-radius: 40px;
-    font-size: 16px;
     background: linear-gradient(#ff79da, #9356dc);
     padding: 25px;
     box-shadow: 0 3px 10px darkgray;
     transition: 100ms;
-    height: 25px;
+    height: 50px;
+    position: relative;
+    width: 186px;
+    top:25px;
+    margin-bottom: 50px;
 }
 body main .btn-explore {
     width: 100%;
