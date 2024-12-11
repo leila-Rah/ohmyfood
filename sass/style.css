@@ -598,7 +598,9 @@ body main {
 }
 
 .main-fonctionnement h2 {
-  padding: 2rem 1rem 0 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .fonctionnement {
@@ -653,6 +655,7 @@ body main {
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  padding: 5px 0 20px 20px;
 }
 
 .restaurants .card {
