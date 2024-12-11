@@ -245,10 +245,8 @@ body main {
     }
      .cards{
       width:100%;
-      display:grid;
       grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 90px;
+      padding: 90px;
      }       
     @media (min-width: 768px) {
    .fonctionnement{
@@ -261,7 +259,6 @@ body main {
    }
   .cards{
     display:grid;
-    grid-template-columns:380px 380px;
     gap:25px;
    }
   .restaurants .card img {
