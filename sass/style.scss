@@ -223,14 +223,7 @@ body main {
     
   }
   
- @media (min-width: 768px) {
-   .restaurants .card {
-     display: flex;
-     flex-basis: 90%;
-     min-width: 210px;
-     
-   }
- }
+ 
   
   /*   FOOTER  */
   .footer{
@@ -258,10 +251,10 @@ body main {
     flex-direction: row;
     display: flex;
     justify-content: center;
+    
    }
-   .fonctionnement h2{
-    justify-content: center;
-   }
+  
+   
   .cards{
     display:grid;
     gap:25px;
@@ -273,16 +266,24 @@ body main {
     height: 291px;
     border-radius: 1rem 1rem 0 0;
   }
+  .restaurants .card {
+    display: flex;
+    flex-basis: 90%;
+    min-width: 210px;
+    
+  }
   .footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 1rem 0 1rem 1.5rem;
+    flex-direction: row-reverse;
 }
   .footer__liste{
     display: flex;
     gap:1rem;
     margin:2rem
+    list-style-type:none;
    
   }
   }
@@ -296,7 +297,11 @@ body main {
         background-color: lightcoral;
     }
 }
-          
+@media (min-width:768px){
+  .main-fonctionnement {
+    padding:3rem 9rem;
+   }
+}
          
         
        
