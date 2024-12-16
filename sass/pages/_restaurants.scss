@@ -58,7 +58,9 @@ main img {
     object-fit: cover;
     width: 100%;
 }
-
+.main-menu{
+    padding:0 50px;
+}
 .titre-menu {
     position: relative;
     top: -5rem;
@@ -239,7 +241,7 @@ body main .menus {
 body main .menus .articles{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+   margin-bottom: 50px;
 }
 body section{
     border:0;
