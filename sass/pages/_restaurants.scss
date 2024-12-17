@@ -95,6 +95,10 @@ main img {
 .layout-star:hover .fa-solid.fa-heart { 
     display: inline;
 }
+.main-menu{
+    width:auto;
+    padding:0 50px;
+}
 
 /*   PANIER  */
 .panier {
@@ -196,11 +200,8 @@ main img {
 }
 .prix {
     display: flex;
-    font-weight: bold;
-    padding:36px 41px 0 0;
-    right:24px;
-    position:absolute;
-      
+    align-items: flex-end;
+
 }
 .menu__valider{ 
 position: relative;
@@ -286,11 +287,7 @@ body main .btn-explore {
         display: flex;
         justify-content: flex-start;
     }
-    .main-menu{
-        width:auto;
-        padding:0 50px;
-    }
-    
+      
 }
 
 @media (max-width: 530px) {

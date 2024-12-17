@@ -121,6 +121,11 @@ main img {
   display: inline;
 }
 
+.main-menu {
+  width: auto;
+  padding: 0 50px;
+}
+
 /*   PANIER  */
 .panier {
   position: absolute;
@@ -231,10 +236,7 @@ main img {
 
 .prix {
   display: flex;
-  font-weight: bold;
-  padding: 36px 41px 0 0;
-  right: 24px;
-  position: absolute;
+  align-items: flex-end;
 }
 
 .menu__valider {
@@ -317,10 +319,6 @@ body main .btn-explore {
   body main .menus .articles .entrees p .plats .desserts {
     display: flex;
     justify-content: flex-start;
-  }
-  .main-menu {
-    width: auto;
-    padding: 0 50px;
   }
 }
 @media (max-width: 530px) {
@@ -426,6 +424,10 @@ body main .btn-explore a {
 .choix span {
   font-weight: bold;
   color: white;
+}
+
+.prix {
+  font-weight: bold;
 }
 
 .footer {
