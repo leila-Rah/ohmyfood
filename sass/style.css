@@ -292,7 +292,6 @@ body main .btn-explore a {
 }
 
 body main .btn-explore {
-  width: 100%;
   height: 50px;
   justify-content: center;
   display: flex;
