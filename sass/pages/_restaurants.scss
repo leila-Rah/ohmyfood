@@ -22,9 +22,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
 }
-body main{
-  background-color: #F6F6F6;  
-}
+
 header {
     box-shadow: 0 5px 10px lightgrey;
 }
@@ -33,8 +31,7 @@ header {
         margin: 0;
         padding: 1rem 0;
         text-align: center;
-       
- }
+}
 
 
 header > div {
@@ -148,7 +145,7 @@ main img {
     border-top: 3px solid var(--lightgreen);
 }
 .article-menu {
-    display: flex;
+    display: inline-grid;
     border: 1px solid rgba(0,0,0,0.1);
     background-color: white;
     width: 470px;
@@ -200,7 +197,9 @@ main img {
 }
 .prix {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0 15px 15px 0;
 
 }
 .menu__valider{ 
