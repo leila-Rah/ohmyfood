@@ -83,9 +83,7 @@ main img {
   background-color: #f6f6f6;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex-basis: 95%;
+  justify-content: space-around;
 }
 
 .titre-menu i {
@@ -96,8 +94,6 @@ main img {
 
 .layout-star {
   display: flex;
-  width: 15%;
-  height: 50px;
   align-items: center;
 }
 
@@ -144,23 +140,22 @@ main img {
 
 /*   MENU  */
 .menus {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(246, 246, 246);
 }
 
 .entrees, .plats, .desserts {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 12px;
+  height: 349px;
 }
 
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
   margin: 0;
-  padding: 0.5rem;
+  padding: 4px;
 }
 
 .entrees h3, .plats h3, .desserts h3 {
@@ -233,7 +228,7 @@ main img {
 .description {
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding: 0 0.5rem;
+  padding: 3px 10px;
 }
 
 .prix {
@@ -274,6 +269,7 @@ body main .menus .articles {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 body section {
@@ -421,6 +417,10 @@ body main .btn-explore a {
 .footer {
   background-color: #353535;
   color: white;
+}
+
+.footer-titre {
+  font-size: 18px;
 }
 
 .footer .fas {
@@ -578,6 +578,10 @@ header {
   padding: 0 25px;
 }
 
+main {
+  background-color: white;
+}
+
 .main-container {
   width: 100%;
 }
@@ -603,10 +607,10 @@ header {
 }
 
 .choix span {
-  left: -26px;
-  width: 40px;
+  left: -20px;
+  width: 35px;
   position: relative;
-  height: 40px;
+  height: 35px;
   border-radius: 20px;
   background-color: #9356dc;
   display: flex;
@@ -619,11 +623,10 @@ header {
   display: flex;
   align-items: center;
   border-radius: 25px;
-  padding: 10px;
+  padding: 5px;
   border: none;
   box-shadow: 0px 5px 10px 0px #b4b4b4;
   background-color: #f6f6f6;
-  margin-bottom: 20px;
   height: 60px;
   gap: 10px;
 }
@@ -735,20 +738,20 @@ header {
 }
 
 /*   FOOTER  */
-.footer {
-  padding: 0 0 1rem;
-  margin-top: 4rem;
-}
-
 .footer a {
   gap: 10px;
   display: flex;
 }
 
 .footer-titre {
-  margin-top: 2rem;
-  font-size: 18px;
-  padding: 2rem 1rem 0;
+  padding: 7px;
+  margin: 25px;
+}
+
+.footer__liste {
+  list-style-type: none;
+  display: grid;
+  gap: 7px;
 }
 
 .cards {
@@ -790,7 +793,6 @@ header {
     display: flex;
     gap: 1rem;
     margin: 2rem;
-    list-style-type: none;
   }
 }
 @keyframes stop-loader {
