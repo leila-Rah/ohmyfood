@@ -94,7 +94,7 @@ main img {
 }
 .main-menu{
     width:auto;
-    padding:0 50px;
+    
 }
 
 /*   PANIER  */
@@ -121,7 +121,10 @@ main img {
 }
 
 .entrees, .plats, .desserts {
-    padding: 0 1rem 3rem 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
@@ -286,21 +289,7 @@ body main .btn-explore {
         display: flex;
         justify-content: flex-start;
     }
-    .article-menu, .article-menu input, .article-menu label {
-        width: 370px;
-        margin-bottom: 1rem;
-        height: 69px;
-    }
-    .entrees, .plats, .desserts {
-        padding: 0;
-        width: 100%;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        margin-top: 1rem;
-    
-    }
-       
-
+            
     body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
         margin: 0;
         transition: all 0.5s;
