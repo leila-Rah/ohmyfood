@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+body main {
+  background-color: #F6F6F6;
+}
+
 header {
   box-shadow: 0 5px 10px lightgrey;
 }
