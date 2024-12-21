@@ -286,10 +286,6 @@ body main .btn-explore {
         display: flex;
         justify-content: flex-start;
     }
-      
-}
-
-@media (max-width: 530px) {
     .article-menu, .article-menu input, .article-menu label {
         width: 370px;
         margin-bottom: 1rem;
@@ -303,10 +299,8 @@ body main .btn-explore {
         margin-top: 1rem;
     
     }
-    
-     
-}
-@media (max-width: 667px) {
+       
+
     body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
         margin: 0;
         transition: all 0.5s;
