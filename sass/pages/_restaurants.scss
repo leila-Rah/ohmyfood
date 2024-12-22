@@ -150,13 +150,12 @@ main img {
     border-top: 3px solid var(--lightgreen);
 }
 .article-menu {
-    display: inline-grid;
+    display: flex;
     border: 1px solid rgba(0,0,0,0.1);
     background-color: white;
     width: 470px;
     border-radius: 1rem;
     overflow: hidden;
-    margin-bottom: 1rem;
     animation: effet-menu 1s ease-in;
     box-shadow: 0 2px 5px darkgray;
 }
@@ -198,38 +197,18 @@ main img {
 .description {
     white-space: nowrap;
     text-overflow: ellipsis;
-     padding:3px 10px;;
+     padding:3px 10px;
+     
 }
 .prix {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
-    padding:0 15px 15px 0;
+    padding:0 15px 8px;
 
 }
-.menu__valider{ 
-position: relative;
-right: -60px;
-height: 70px;
-width: 60px;
-display: inline-block;
--webkit-transform: translateX(0px);
--ms-transform: translateX(0px);
-transform: translateX(0px);
--webkit-transition: all 250ms ease-in-out;
--o-transition: all 250ms ease-in-out;
-transition: all 250ms ease-in-out;
-background-color: #99e2d0;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-align: center;
--ms-flex-align: center;
-align-items: center;
--webkit-box-pack: center;
--ms-flex-pack: center;
-justify-content: center;
-}        
+
+
 .description:hover, .prix:hover {
     cursor: pointer;
 }
@@ -301,23 +280,3 @@ body main .btn-explore {
 }
 
 
-/*   KeyFrames  */
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes effet-menu {
-    0% {
-        opacity: 0;
-        transform: rotateX(-100deg);
-        transform-origin: top;
-    }
-
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-        transform-origin: top;
-    }
-}
