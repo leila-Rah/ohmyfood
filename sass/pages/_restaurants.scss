@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
 }
-body main{
+.main{
     background-color: #F6F6F6;
 }
 header {
@@ -126,7 +126,7 @@ main img {
     justify-content: center;
     flex-direction: column;
     gap:12px;
-    height: 349px;
+    height: 300px;
 }
 .entrees h4, .plats h4, .desserts h4,
 .entrees p, .plats p, .desserts p {
