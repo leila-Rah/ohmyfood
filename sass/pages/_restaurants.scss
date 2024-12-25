@@ -229,6 +229,19 @@ body main .menus .articles{
 body section{
     border:0;
 }
+.confirmation{
+    margin-right: -3rem;
+    background-color: #99e2d0;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+ .confirmation:hover{
+    margin-right: 0;
+    transform: scale(1.1);
+    background-color: #99e2d0;
+}
 body main .btn-explore a {
     
     @include flex-just;
