@@ -283,18 +283,30 @@ body section {
 }
 
 .confirmation {
-  margin-right: -3rem;
+  margin-right: -4rem;
+  width: 4rem;
   background-color: #99e2d0;
-  align-items: center;
   display: flex;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  align-items: center;
+  justify-content: center;
+  transition: margin-right 0.75s;
 }
 
 .confirmation:hover {
   margin-right: 0;
   transform: scale(1.1);
   background-color: #99e2d0;
+  cursor: pointer;
+}
+
+.fa-check {
+  border-radius: 50%;
+  width: 25px;
+  background-color: white;
+  aspect-ratio: 1;
+  place-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 body main .btn-explore a {
@@ -412,6 +424,11 @@ body main .btn-explore a {
 
 .prix {
   font-weight: bold;
+}
+
+.confirmation .fas {
+  color: #99E2D0;
+  font-weight: 900;
 }
 
 .footer {
