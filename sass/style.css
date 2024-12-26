@@ -752,6 +752,11 @@ main {
   background-color: #99E2D0;
   color: #2FAF94;
   padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.restaurants span:hover {
+  animation: decrocher 0.75s ease-in-out forwards;
 }
 
 /*   FOOTER  */
@@ -820,6 +825,17 @@ main {
   100% {
     transform: scale(0);
     background-color: lightcoral;
+  }
+}
+@keyframes decrocher {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(10px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
   }
 }
 @media (min-width: 768px) {

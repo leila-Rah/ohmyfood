@@ -226,7 +226,7 @@ main{
     transition: transform 0.3s ease;
   }
   .restaurants span:hover{
-    animation: decrocher 1s ease-in-out forwards;
+    animation: decrocher 0.75s ease-in-out forwards;
   }
    /*   FOOTER  */
     
@@ -256,8 +256,6 @@ main{
     justify-content: center;
     
    }
-  
-   
   .cards{
     display:grid;
     gap:25px;
@@ -300,23 +298,24 @@ main{
         background-color: lightcoral;
     }
 }
-@keyframes decrocher{
-  0% {
+  @keyframes decrocher {
+    0% {
       transform: translateY(0); 
+     }
   
   90% {
-      transform: translateY(10px) rotate(10deg); 
+      transform: translateY(10px) rotate(90deg); 
   }
   100% {
      transform: translateY(0) rotate(0);
   }
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
   .main-fonctionnement {
     padding:3rem 9rem;
    }
-}
+  }
          
         
        
