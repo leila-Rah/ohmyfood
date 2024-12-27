@@ -236,15 +236,13 @@ body section{
     background-color: #99e2d0;
     @include flex-just;
     transition: margin-right 0.75s ;
-    
+ 
 }
-.confirmation:hover{
+.article-menu:hover .confirmation {
     margin-right: 0;
     transform: scale(1.1);
-    background-color: #99e2d0;
     cursor: pointer;
-    
-}
+ }  
 .fa-check {
     border-radius: 50%;
     width: 25px;
