@@ -202,7 +202,6 @@ main img {
   background-color: white;
   width: 470px;
   border-radius: 1rem;
-  overflow: hidden;
   animation: effet-menu 1s ease-in;
   box-shadow: 0 2px 5px darkgray;
   width: 93vw;
@@ -210,9 +209,13 @@ main img {
 }
 
 .description {
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding: 3px 10px;
+  overflow: hidden;
+}
+
+h4, p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .prix {
