@@ -159,40 +159,8 @@ main img {
     overflow: hidden;
     animation: effet-menu 1s ease-in;
     box-shadow: 0 2px 5px darkgray;
-}
-
-.article-menu:hover .select-choix {
-    margin: 0;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.article-menu:hover .select-choix i {
-    animation: spin 1s;
-}
-.article-menu input {
-    width: 470px; 
-    height: 60px;
-    position: absolute;
-    visibility: hidden;
-}
-.article-menu label { 
-    position: absolute;
-    width: 470px; 
-    height: 60px;
-    border-radius: 1rem;
-}
-.article-menu label:hover {
-    cursor: pointer;
-}
-
-.article-menu input[type="checkbox"]:checked + label {
-    background-color: var(--green);
-    opacity: 0.2;
-    box-shadow: 0 0 5px 3px black;
-}
-
-.article-menu h2 { 
-    display: none; 
+    width: 93vw;
+    height:68px;
 }
 
 .description {
@@ -208,8 +176,6 @@ main img {
     padding:0 15px 8px;
 
 }
-
-
 .description:hover, .prix:hover {
     cursor: pointer;
 }
@@ -301,5 +267,6 @@ body main .btn-explore {
         transition: all 0.5s;
         cursor: pointer;
     }
+    
 }
 

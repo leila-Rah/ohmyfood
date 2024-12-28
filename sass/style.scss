@@ -6,11 +6,7 @@
 @import'pages/restaurants';
 @import'base/typography';
 
-body{
- margin:0px;
- @include flex-di;
- justify-content: center;
-}
+
 body header .loader {
   display: flex;
   justify-content: center;
@@ -37,6 +33,9 @@ body header .loader {
 
 header {
  text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .ville{
     @include flex-just;
@@ -97,6 +96,7 @@ main{
 }
 .main-container{
  width: 100%;
+ max-width: 1440px;
 }
 .main-fonctionnement{
  display: flex;
@@ -250,7 +250,12 @@ main{
       padding: 14px;
      }       
     @media (min-width: 768px) {
-   .fonctionnement{
+     body{
+      align-items: center;
+      max-width: 1440px;
+     }
+     
+    .fonctionnement{
     flex-direction: row;
     display: flex;
     justify-content: center;
