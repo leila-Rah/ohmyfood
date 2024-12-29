@@ -156,19 +156,20 @@ main img {
     background-color: white;
     width: 470px;
     border-radius: 1rem;
-     animation: effet-menu 1s ease-in;
+    overflow: hidden;
+    animation: effet-menu 1s ease-in;
     box-shadow: 0 2px 5px darkgray;
     width: 93vw;
     height:68px;
 }
-
-.description {
-    padding:3px 10px;
-    overflow: hidden; 
-}
 h4,p{
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @include over;
+}
+.description {
+    white-space: nowrap;
+    @include over;
+     padding:3px 10px;
+     
 }
 .prix {
     display: flex;
