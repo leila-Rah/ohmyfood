@@ -262,6 +262,9 @@ main{
     gap:8rem;
     
    }
+   .main-fonctionnement {
+    padding:3rem 9rem;
+   }
   .cards{
     display:grid;
     gap:25px;
@@ -317,11 +320,7 @@ main{
   }
 }
 
-@media (min-width:768px) {
-  .main-fonctionnement {
-    padding:3rem 9rem;
-   }
-  }
+
          
         
        

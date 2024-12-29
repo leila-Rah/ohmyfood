@@ -205,7 +205,7 @@ main img {
   overflow: hidden;
   animation: effet-menu 1s ease-in;
   box-shadow: 0 2px 5px darkgray;
-  width: 93vw;
+  width: 60vw;
   height: 68px;
 }
 
@@ -314,18 +314,14 @@ body main .btn-explore {
 }
 
 /*  MEDIA QUERIES  */
-@media (max-width: 768px) {
-  .subtitle {
-    font-size: 1.2rem;
+@media (min-width: 768px) {
+  .main-menu {
+    width: auto;
+    padding: 0 176px;
   }
-  body main .menus .articles .entrees p .plats .desserts {
-    display: flex;
-    justify-content: flex-start;
-  }
-  body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
-    margin: 0;
-    transition: all 0.5s;
-    cursor: pointer;
+  .titre-menu {
+    justify-content: center;
+    gap: 15px;
   }
 }
 body {
@@ -759,6 +755,9 @@ main {
     justify-content: center;
     gap: 8rem;
   }
+  .main-fonctionnement {
+    padding: 3rem 9rem;
+  }
   .cards {
     display: grid;
     gap: 25px;
@@ -807,10 +806,5 @@ main {
   }
   100% {
     transform: translateY(0) rotate(0);
-  }
-}
-@media (min-width: 768px) {
-  .main-fonctionnement {
-    padding: 3rem 9rem;
   }
 }/*# sourceMappingURL=style.css.map */

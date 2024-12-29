@@ -159,7 +159,7 @@ main img {
     overflow: hidden;
     animation: effet-menu 1s ease-in;
     box-shadow: 0 2px 5px darkgray;
-    width: 93vw;
+    width: 60vw;
     height:68px;
 }
 h4,p{
@@ -255,20 +255,17 @@ body main .btn-explore {
    
 /*  MEDIA QUERIES  */
 
-@media (max-width : 768px) {
-    .subtitle {
-        font-size: 1.2rem;
+@media (min-width: 768px) {
+    
+    .main-menu{
+        width: auto;
+        padding:0 176px;
     }
-    body main .menus .articles .entrees p .plats .desserts{
-        display: flex;
-        justify-content: flex-start;
+    .titre-menu{
+        justify-content: center;
+        gap:15px;
     }
             
-    body main .menus .articles .entrees .article-menu:hover .select-choix, body main .menus .articles .plats .article-menu:hover .select-choix, body main .menus .articles .desserts .article-menu:hover .select-choix {
-        margin: 0;
-        transition: all 0.5s;
-        cursor: pointer;
-    }
     
 }
 
