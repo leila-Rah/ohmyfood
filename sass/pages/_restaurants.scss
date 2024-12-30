@@ -154,12 +154,11 @@ main img {
     display: flex;
     border: 1px solid rgba(0,0,0,0.1);
     background-color: white;
-    width: 470px;
     border-radius: 1rem;
     overflow: hidden;
     animation: effet-menu 1s ease-in;
     box-shadow: 0 2px 5px darkgray;
-    width: 60vw;
+    width: 100%;
     height:68px;
 }
 h4,p{
