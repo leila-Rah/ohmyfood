@@ -118,7 +118,7 @@ main img {
 
 .menus {
    flex-direction: column;
-   padding:18px;
+   padding:0 18px;
    
 }
 
@@ -186,7 +186,7 @@ body main .menus {
 body main .menus .articles{
     display: flex;
     flex-direction: column;
-   margin-bottom: 50px;
+   margin-bottom: 30px;
    margin-top: -50px;
 }
 body section{

@@ -48,7 +48,7 @@ header {
 //.. partie titre + explorer //
 .btn-explore h1  {
  @include flex-just;
- padding: 0 0 0 20px;
+ padding: 0 60px 0 53px;
 }
 
 .explore-restaurants{
@@ -73,7 +73,7 @@ header {
   background: linear-gradient(var(--secondary), var(--primary));
   box-shadow: 0 3px 10px var(--darkgray);
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
 }
 .btn-explore a:hover {
   cursor: pointer;
@@ -84,9 +84,9 @@ header {
 .btn-explore {
     background-color: #f6f6f6;
     @include flex-col;
-    flex-direction: column;
     text-align: center;
     padding: 0 25px;
+    margin-bottom: 25px;
  }
   
 
@@ -102,7 +102,7 @@ main{
  display: flex;
  flex-direction: column;
  margin-top: 10px;
- padding:0 20px 0 20px;
+ padding:0 20px 40px 20px;
 
 }
  .main-fonctionnement h2{
@@ -150,13 +150,13 @@ main{
     flex-wrap: wrap;
    background-color: rgba(246,246,246,1);
    margin-top: 10px;
-   padding: 0 15px;
+   
 }
 .restaurants h2{
   width: 100%;
   align-items: center;
   justify-content: space-around;
-  padding: 5px 0 20px 20px;
+  padding: 5px 0 0 20px;
  }
 .restaurants .card {
   cursor: pointer;
@@ -247,7 +247,7 @@ main{
     .cards{
       width:100%;
       grid-template-columns: repeat(2, 1fr);
-      padding: 14px;
+      padding: 0 14px;
      }       
     @media (min-width: 768px) {
      body{
