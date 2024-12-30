@@ -118,7 +118,7 @@ main img {
 
 .menus {
    flex-direction: column;
-   align-items: center;
+   padding:18px;
    
 }
 
@@ -181,12 +181,7 @@ h4,p{
     cursor: pointer;
 }
 body main .menus {
-    border: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #F6F6F6;
 }
 body main .menus .articles{
     display: flex;

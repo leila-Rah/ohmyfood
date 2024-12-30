@@ -162,7 +162,7 @@ main img {
 /*   MENU  */
 .menus {
   flex-direction: column;
-  align-items: center;
+  padding: 18px;
 }
 
 .entrees, .plats, .desserts {
@@ -232,12 +232,7 @@ h4, p {
 }
 
 body main .menus {
-  border: 0;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #F6F6F6;
 }
 
 body main .menus .articles {
