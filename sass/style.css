@@ -428,13 +428,13 @@ p {
   font-weight: bold;
 }
 
-.titre-menu h1 {
+.titre-menu h2 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 400;
 }
 
-footer h4 {
+footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
 }
@@ -485,7 +485,7 @@ body header .loader {
   transform-origin: top right;
 }
 
-.ville h3 {
+.ville p {
   font-size: 18px;
   padding-left: 1rem;
 }
